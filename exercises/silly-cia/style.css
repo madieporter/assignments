@@ -1,0 +1,30 @@
+.font {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
+    text-align: center;
+}
+
+.font-fam {
+    font-family: Georgia, 'Times New Roman', Times, serif, serif;
+    text-align: center;
+}
+
+p {
+    line-height: 25px;
+}
+
+img {
+    margin-right: 20px;
+    float: left;
+}
+
+.lastp {
+        text-transform: uppercase;
+    }
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
