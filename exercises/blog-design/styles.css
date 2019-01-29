@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+.topNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #A14F5B;
+}
+
+.topNav a {
+    float: left;
+    color: #5DA177;
+    background-color: #A14F5B;
+    width: 24%;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 23px;
+}
+
+.topNav a:hover {
+    background-color: #A1A13B;
+    color: #FFB8FF;
+}
+
+.topNav a:active {
+    background-color:  #A15D91;
+    color: #FFB8B2;
+}
+
+.title {
+    color: #5DA177;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 110px;
+    text-align: center;
+    
+}
+
+.blogTitles {
+    background-color: #A1A13B;
+    color: #FFB8B2;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 50px;
+    width: 70%;
+}
+
+.date {
+    background-color: #FFB8B2;
+    color: #A1A13B;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    width: 53%;
+}
+
+.foodie {
+    width: 442px;
+    height: 300px;
+    margin-left: 65px;
+}
+
+.posts {
+    margin-left: 18px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    color: #A15D91;
+    width: 60%;
+}

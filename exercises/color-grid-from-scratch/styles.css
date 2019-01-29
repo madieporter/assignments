@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+    border: 10px solid white;
+}
+
+.box1 {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    background-color: #F5C6D6;
+}
+
+.box2 {
+    display: inline-block;
+    width: 25%;
+    height: 200px;
+    background-color: #EE2E84;
+}
+
+.box3 {
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+    background-color: #85CFD8;
+}
+
+.box4 {
+    display: inline-block;
+    width: 75%;
+    height: 200px;
+    background-color: #8DC63F;
+}
+
+.box5 {
+    display: inline-block;
+    height: 200px;
+    width: 25%;
+    background-color: #E76E34;
+}

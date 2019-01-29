@@ -73,19 +73,20 @@
 // console.log(toggleSwitch([9, 3, 4, 2])) //"the light is on"
 
 
-// function toggleSwitch(switches) {
-//     var on = false;
+function toggleSwitch(switches) {
+    var on = false;
 
-//     for (var i = 0; i < switches.length; i++)
-//         for (var j = 0; j < switches[i]; j++)
-//         on = !on;
+    for (var i = 0; i < switches.length; i++){
+        for (var j = 0; j < switches[i]; j++){
+             on = !on;
+        }
+    }
+    if(on){
+        return "the light is on"
+    } else {
+        return "the light is off"
+    }
+}
 
-//     if(on){
-//         return "the light is on"
-//     } else {
-//         return "the light is off"
-//     }
-// }
-
-// console.log(toggleSwitch([2, 5, 435, 4, 3])) //"the light is on"
+console.log(toggleSwitch([2, 5, 435, 4, 3])) //"the light is on"
 

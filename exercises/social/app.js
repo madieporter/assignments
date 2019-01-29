@@ -32,7 +32,23 @@ var americanBicycler = {
             name: "Sarah",
             age: 30,
             mainCity: "Portland",
-            
+            citiesBiked: [
+                {
+                    newYork: {
+                        cities: ["Buffalo", "New York", "Albany", "Syracuse", "Niagara Falls", "Saratoga Springs"],
+                        favoritePaths: ["Hudson River Greenway", "Carroll Gardens"]
+                    },
+                    vermont: ["Burlington", "Essex", "Woodstock"],
+                    newJersey: ["Atlantic City", "Jersey City"],
+                    pennsylvania: ["Philadelphia", "Pittsburg", "Scranton"]
+                },
+            {
+                name: "Jess",
+                age: 26,
+                mainCity: "Ogden",
+                citiesBiked: ["St. George", "Moab", "Price", "Prove", "Salt Lake City"]
+            }
+            ]
         }
     ]
 }
