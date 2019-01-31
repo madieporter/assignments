@@ -1,0 +1,356 @@
+* {
+    font-size: 0px;
+    box-sizing: border-box; 
+    background-color: #A0FFF4;
+}
+
+.franceOne, .franceTwo, .franceThree {
+    display: inline-block;
+    width: 150px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.franceOne {
+    background-color: blue;
+}
+.franceTwo {
+    background-color: white;
+}
+.franceThree {
+    background-color: red;
+}
+
+.germOne, .germTwo, .germThree {
+    display: block;
+    width: 450px;
+    height: 110px;
+    
+}
+
+.germOne {
+    background-color: black;
+}
+
+.germTwo {
+    background-color: red;
+}
+
+.germThree {
+    background-color: yellow;
+    margin-bottom: 30px;
+}
+
+.madagascar {
+    position: relative;
+}
+
+.madOne, .madTwo, .madThree {
+    display: inline-block;
+}
+
+.madOne {
+    background-color: white;
+    width: 155px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.madTwo {
+    background-color: red;
+    width: 300px;
+    height: 150px;
+    position: relative;
+}
+
+.madThree {
+    background-color: green;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    top: 150px;
+    right: 300px;
+    margin-bottom: 30px;
+}
+
+.switzOne {
+    display: block;
+    background-color: red;
+    width: 458px;
+    height: 400px;
+    margin-bottom: 30px;
+
+}
+
+.switzTwo {
+    background-color: white;
+    position: absolute;
+    top: 1133px;
+    width: 290px;
+    height: 100px;
+    left: 90px;
+}
+
+.switzThree {
+    background-color: white;
+    position: absolute;
+    top: 1044px;
+    width: 110px;
+    height: 290px;
+    left: 180px;
+} 
+
+.swedenOne {
+    display: block;
+    background-color: #0069a7;
+    width: 592px;
+    height: 330px;
+}
+
+.swedenTwo {
+    background-color: #fecc01;
+    position: absolute;
+    top: 1534px;
+    width: 592px;
+    height: 50px;
+    left: 8px;
+}
+
+.swedenThree {
+    background-color: #fecc01;
+    position: absolute;
+    top: 1408px;
+    width: 50px;
+    height: 330px;
+    left: 178px;
+}
+
+.gambiaOne {
+    background-color: #ce1126;
+    width: 580px;
+    height: 130px;
+    position: absolute;
+    top: 1761px;
+    right: 745px;
+    margin-bottom: 30px;
+}
+
+.gambiaTwo {
+    position: absolute;
+    background-color: white;
+    width: 580px;
+    height: 133px;
+    top: 1886px;
+    right: 745px;
+}
+
+.gambiaThree {
+    position: absolute;
+    background-color: #0c1d8c;
+    width: 580px;
+    height: 93px;
+    top: 1905px;
+    right: 745px;
+}
+
+.gambiaFour {
+    background-color: #3a7729;
+    width: 580px;
+    height: 130px;
+    position: absolute;
+    top: 2011px;
+    right: 745px;
+}
+
+.tongaOne {
+    background-color: #c10000;
+    width: 580px;
+    height: 310px;
+    position: absolute;
+    top: 2160px;
+    right: 745px;
+}
+
+.tongaTwo {
+    background-color: white;
+    width: 247px;
+    height: 151px;
+    position: absolute;
+    top: 2167px;
+    right: 1071px;
+}
+ .tongaThree {
+    background-color: #c10000;
+    position: absolute;
+    top: 2191px;
+    width: 37px;
+    height: 100px;
+    left: 119px;
+ }
+.tongaFour {
+    background-color: #c10000;
+    position: absolute;
+    top: 2221px;
+    width: 102px;
+    height: 31px;
+    left: 87px;
+}
+
+.japanOne {
+    background-color: white;
+    width: 580px;
+    height: 310px;
+    position: absolute;
+    top: 2480px;
+    right: 745px;
+}
+
+.japanTwo {
+    background-color: #bc002d;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 2536px;
+    right: 943px;
+    border-radius: 50%;
+    
+}
+
+.greeceOne {
+    position: absolute;
+    background-color: #0e5daf;
+    width: 592px;
+    height: 330px;
+    top: 2800px;
+}
+
+.greeceTwo {
+    background-color: white;
+    position: absolute;
+    top: 2866px;
+    width: 194px;
+    height: 40px;
+    left: 8px;
+}
+
+.greeceThree {
+    background-color: white;
+    position: absolute;
+    top: 2800px;
+    width: 41px;
+    height: 180px;
+    left: 79px;
+}
+
+.greeceFour {
+    background-color: white;
+    position: absolute;
+    top: 2826px;
+    width: 398px;
+    height: 40px;
+    left: 202px;
+}
+
+.greeceFive {
+    background-color: white;
+    position: absolute;
+    top: 2906px;
+    width: 398px;
+    height: 40px;
+    left: 202px;
+}
+
+.greeceSix {
+    background-color: white;
+    position: absolute;
+    top: 2980px;
+    width: 592px;
+    height: 40px;
+    left: 8px;
+}
+
+.greeceSeven {
+    background-color: white;
+    position: absolute;
+    top: 3056px;
+    width: 592px;
+    height: 40px;
+    left: 8px;
+}
+
+.nigerOne {
+    background-color: #e15207;
+    width: 580px;
+    height: 160px;
+    position: absolute;
+    top: 3160px;
+    right: 745px; 
+}
+
+.nigerTwo {
+    background-color: white;
+    width: 580px;
+    height: 160px;
+    position: absolute;
+    top: 3320px;
+    right: 745px;
+    margin-bottom: 30px;
+}
+
+.nigerThree {
+    background-color: #0db02b;
+    width: 580px;
+    height: 160px;
+    position: absolute;
+    top: 3480px;
+    right: 745px;
+    margin-bottom: 30px;
+}
+
+.nigerFour {
+    background-color: #e15207;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 3335px;
+    right: 977px;
+    border-radius: 50%;
+}
+
+.maldivesOne {
+    background-color: #d21034;
+    width: 580px;
+    height: 310px;
+    position: absolute;
+    top: 3660px;
+    right: 745px;
+}
+.maldivesTwo {
+    background-color: #007e3a;
+    width: 370px;
+    height: 180px;
+    position: absolute;
+    top: 3720px;
+    right: 855px;
+}
+
+.maldivesThree {
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 3740px;
+    right: 939px;
+    border-radius: 50%;
+
+}
+
+.maldivesFour {
+    background-color: #007e3a;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 3740px;
+    right: 911px;
+    border-radius: 50%;
+}
