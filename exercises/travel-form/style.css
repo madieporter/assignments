@@ -1,0 +1,33 @@
+body {
+    background-color: #E8B20C;
+}
+
+.title {
+    font-size: 144px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    color: #FF5232;
+}
+
+.info {
+    background-color: #D0FFD3;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 350px;
+    border-style: double;
+    margin-left: 37%;
+    position: absolute;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 5%;
+}
+ 
+.imgOne {
+    float: left;
+    margin-left: 100px
+}
+
+.imgTwo {
+    float: right;
+    margin-right: 100px;
+}
+

@@ -1,0 +1,21 @@
+* {
+    background-color: #FF8AF5;
+}
+
+#box {
+    background-color: #CFE862;
+    width: 580px;
+    height: 450px;
+    position: absolute;
+    top: 210px;
+    right: 375px;
+    font-size: 0;
+    margin-bottom: 50px;
+}
+
+.djName {
+    color: #CFE862;
+    font-family: 'Monoton', cursive;
+    font-size: 130px;
+    text-align: center;
+}

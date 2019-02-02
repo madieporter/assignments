@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1 class = "digits">Give Me Your Digits</h1>
+    <div class = "addition">Addition
+        <form name = "addForm" id="addForm">
+            <input type = "number" id = "fAddNum"> +
+            <input type = "number" id = "lAddNum">
+            <button id = "button">Submit</button>
+            <div id = "addSum">The total = </div>
+        </form>
+    </div>
+   
+    <div class = "subtraction">Subtraction
+        <form name = "subtractForm" id = "subtractForm">
+            <input type = "number" id = "fSubNum"> -
+            <input type = "number" id = "lSubNum"> 
+            <button id = "button">Submit</button>
+            <div id = "subtractSum">The total = </div>
+        </form>
+    </div>
+
+    <div class = "multiplication">Multiplication
+        <form name = "multForm" id = "multForm">
+            <input type = "number" id = "fMultNum"> *
+            <input type = "number" id = "lMultNum" > 
+            <button id = "button">Submit</button>
+            <div id = "multSum">The total = </div>
+        </form>
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

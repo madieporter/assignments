@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pattaya" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Travel Form</title>
+</head>
+<body>
+    <div class="title">Mohawk Airlines</div>
+
+    <div class="imgOne"><img src="https://inspirationfeeed.files.wordpress.com/2014/11/japan.jpg" alt="" height=360px></div>
+    <div class="imgTwo"><img src="https://i.pinimg.com/236x/2e/f2/81/2ef281899cfb26f79be4e050a3715220.jpg" alt="" height=360px></div>
+    <div class="info">
+    <form name="form">
+        <div class="intro">Please tell us a little about yourself.</div>
+        <div>Who are you?<br>
+            <input type="text" 
+                name="fName"
+                placeholder="First Name"/><br>
+            <input type="text"
+                 name="lName" 
+                 placeholder="Last Name"/><br>
+        </div>
+        <div>What is your age?<br>
+        <input type="number" 
+            name="age" 
+            placeholder="age"/><br>
+        </div>
+        <div>Gender?<br>
+        <input type="radio" 
+            id="gender"
+            name="gender"
+            value="female"/>Female<br>
+        <input type="radio" 
+            id="gender"
+            name="gender" 
+         value="male"/>Male<br>
+        <input type="radio"
+            id="gender"
+            name="gender" 
+            value="other"/>Other<br>
+        </div>
+        <div>Where are you headed?<br>
+        <input type="checkbox" 
+            id="destination"
+            name="destination1" 
+            value="Thailand"/>Thailand<br>
+        <input type="checkbox"
+            id="destination"
+             name="destination2" 
+             value="Philippines"/>Philippines<br>
+        <input type="checkbox"
+            id="destination"
+             name="destination3" 
+             value="Japan"/>Japan<br>
+        </div>
+        <div>Any dietary restrictions?<br>
+        <input type="checkbox"
+            id="diet"
+            name="diet1" 
+            value="vegetarian"/>Vegetarian<br>
+        <input type="checkbox" 
+            id="diet"
+            name="diet2" 
+            value="vegan"/>Vegan<br>
+        <input type="checkbox"
+            id="diet"
+            name="diet3" 
+            value="lactose free"/>Lactose Free<br>
+        </div>
+        <button>Submit</button>
+    </div>    
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

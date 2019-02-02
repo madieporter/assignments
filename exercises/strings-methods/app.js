@@ -4,10 +4,10 @@
 // console.log(upperStr + downerStr);
 
 
-// function findMiddleIndex(str){
-//     return Math.floor(str.length / 2)
-// }
-// console.log(findMiddleIndex("words"))
+function findMiddleIndex(str){
+    return Math.floor(str.length / 2)
+}
+console.log(findMiddleIndex("words"))
 
 // var myFirstSlice = "Hello this is my first slice";
 // var mySecondSlice = myFirstSlice.slice(0, 13);
