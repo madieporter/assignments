@@ -45,7 +45,7 @@
 //     }
 //   } 
 
-// for(i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
+// for(var i = 0; i < peopleWhoWantToSeeMadMaxFuryRoad.length; i++) {
 //     if (peopleWhoWantToSeeMadMaxFuryRoad[i].gender === "female") {
 //         console.log (peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enought to see movie, don't let her in")
 //     } else { console.log (peopleWhoWantToSeeMadMaxFuryRoad[i].name + " is not old enought to see movie, don't let him in")

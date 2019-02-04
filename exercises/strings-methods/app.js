@@ -4,10 +4,10 @@
 // console.log(upperStr + downerStr);
 
 
-function findMiddleIndex(str){
-    return Math.floor(str.length / 2)
-}
-console.log(findMiddleIndex("words"))
+// function findMiddleIndex(str){
+//     return Math.floor(str.length / 2)
+// }
+// console.log(findMiddleIndex("words"))
 
 // var myFirstSlice = "Hello this is my first slice";
 // var mySecondSlice = myFirstSlice.slice(0, 13);
@@ -22,3 +22,16 @@ console.log(findMiddleIndex("words"))
 
 // console.log(upperStr + lowerStr)
 
+
+// function capitalize(str) {
+//   var words = str.split(" ");
+//   var capWords = [];
+//   for (var i = 0; i < words.length; i++) {
+//       var capFirstLetter = words[i];
+//       capFirstLetter = capFirstLetter.charAt(0).toUpperCase() + capFirstLetter.slice(1);
+//       capWords.push(capFirstLetter);
+//   }
+//   var fullFunction = capWords.join(" ");
+//   return fullFunction;
+// }
+// console.log(capitalize("hey friends! practice practice practice!"));
