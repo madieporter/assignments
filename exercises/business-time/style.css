@@ -1,0 +1,138 @@
+* {
+    background-color: #4A543B;
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+.welcome {
+    display: flex;
+    font-family: 'Kaushan Script', cursive;
+    color: #E8A60C;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.title {
+    font-size: 160px;
+}
+
+.culture {
+    color: black;
+    font-size: 42px;
+    justify-content: center;
+    margin-left: 110px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.circles {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.address {
+    font-size: 25px;
+    background-color: #cd5542;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-style: solid;
+    margin-left: -68px;
+}
+
+.address > p {
+    background-color: #cd5542;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 83px;
+    left: 24px;
+    width: 84%;
+}
+
+.hours {
+    font-size: 23px;
+    background-color: #cd5542;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin-left: 49px;
+    margin-top: 101px;
+    border-style: solid;
+}
+
+.hours > p {
+    background-color: #cd5542;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 125px;
+    left: 32px;
+    width: 84%;
+}
+
+.topNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #cd5542;
+    display: flex;
+}
+
+.topNav > a {
+    color: #4A543B;
+    background-color: #cd5542;
+    height: 37px;
+    text-decoration: none;
+    font-size: 29px;
+    font-family: 'Permanent Marker', cursive;
+    flex: 1;
+}
+
+.topNav a:hover {
+    background-color: #A1A13B;
+    color: #cd5542;
+}
+
+.topNav a:active {
+    background-color:  #E8A60C;
+    color: #4A543B;
+}
+
+.fish {
+    position: relative;
+    margin-top: 36%;
+    right: 113%;
+}
+
+.mainDescription {
+    position: relative;
+    margin-top: -24%;
+    margin-left: 21%;
+    font-size: 71px;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    width: 60%;
+}
+
+.mainDescription > p {
+    font-size: 33px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.footer {
+    text-align: center;
+    margin-left: 0%;
+}
+
+.footer > p {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: -3%;
+    font-size: 20px;
+}
