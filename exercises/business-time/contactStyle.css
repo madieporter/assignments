@@ -1,0 +1,115 @@
+body {
+    background-color: #4A543B;
+    margin: 0;
+}
+
+.background {
+display: flex;
+height: 567px;
+margin-left: 18%;
+}
+
+.topNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.topNav > a {
+    color: #4A543B;
+    background-color: #128793;
+    height: 37px;
+    text-decoration: none;
+    font-size: 29px;
+    font-family: 'Permanent Marker', cursive;
+    flex: 1;
+}
+
+.topNav a:hover {
+    background-color: #A1A13B;
+    color: #e0642b;
+}
+
+.topNav a:active {
+    background-color:  #E8A60C;
+    color: #4A543B;
+}
+
+.allHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome {
+    display: flex;
+    font-family: 'Kaushan Script', cursive;
+    color: #e0642b;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.title {
+    font-size: 130px;
+}
+
+.culture {
+    color: black;
+    font-size: 29px;
+    justify-content: center;
+    margin-left: 110px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.info {
+    width: 50%;
+    margin-right: 43px;
+    margin-top: 80px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.info > p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+
+.contactInfo {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    width: 27%;
+    margin-top: -37%;
+    margin-left: 36.5%;
+    color: #37677e;
+}
+
+.phone {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 33px;
+}
+
+.email {
+    margin-top: 0px;
+    font-size: 36px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.footer {
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 18%;
+}
+
+.footer > p {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: -3%;
+    font-size: 20px;
+}

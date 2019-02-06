@@ -5,27 +5,28 @@ var answers = [];
 console.log(escapeRoom(playGame));
 
 function escapeRoom(playGame) {
-    var alive = true;
-    while(alive) {
+    var isAlive = true;
+    while(isAlive) {
         answers.push(playGame);
         if (playGame == 1) {
-            alive = false;
+            isAlive = false;
             return ("There was a snake in the hole. It bit your hand off and you bled to death. You're dead.");
         } else if (playGame == 2) {
-            alive = true;
+            isAlive = true;
             console.log("You found the key and you're on your way to Jesus!");
             playGame = ask.question("Which fate do you choose now? \n\n1. Put your hand in the hole \n\n 2. Find the key \n\n3. Open the door   ");
         } else if (playGame == 3) {
             if (answers.includes("2")) {
-                alive = false;
+                isAlive = false;
                 return ("Jesus forgives you of your sins. Welcome to Hell.")
             } else {
                 console.log("Jesus locked the door. Repent of your sins.")
                 playGame = ask.question("Which fate do you choose now? \n\n1. Put your hand in the hole \n\n 2. Find the key \n\n3. Open the door   ");
             } 
         } else {
-        alive = false;
+        isAlive = false;
         console.log("You dont get to play the game. Go straight to Heaven. I heard it sucks there.")
         }
     }
 }
+
