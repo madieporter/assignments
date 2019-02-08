@@ -1,3 +1,5 @@
+@media (max-width: 1440px) {
+
 * {
     background-color: #4A543B;
     margin: 0;
@@ -16,7 +18,7 @@ header {
 }
 
 .title {
-    font-size: 160px;
+    font-size: 156px;
 }
 
 .culture {
@@ -32,7 +34,7 @@ header {
     flex-direction: row;
     font-family: 'Permanent Marker', cursive;
 }
-
+  
 .address {
     font-size: 25px;
     background-color: #d32323;
@@ -126,7 +128,7 @@ header {
     font-family: 'Permanent Marker', cursive;
 }
 .topDescription {
-    color: #d32323;
+    color: black;
 }
 .footer {
     text-align: center;
@@ -138,3 +140,306 @@ header {
     margin-top: -3%;
     font-size: 20px;
 }
+}
+
+@media (max-width: 1024px) {
+
+    * {
+        background-color: #4A543B;
+        margin: 0;
+    }
+    
+    header {
+        display: flex;
+    }
+    
+    #lanterns {
+        visibility: hidden;
+    }
+
+    .welcome {
+        font-family: 'Kaushan Script', cursive;
+        color: #E8A60C;
+        margin-left: -579px;
+        margin-top: 13%;
+    }
+    
+    .title {
+        font-size: 94px;
+        margin-left: 73px;
+    }
+    
+    .culture {
+        color: black;
+        font-size: 27px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .circles {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Permanent Marker', cursive;
+    }
+  
+    .address {
+        font-size: 20px;
+        background-color: #d32323;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        border-style: solid;
+    }
+
+    .address > p {
+        background-color: #d32323;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 70px;
+        left: 17px;
+    }
+
+    .hours {
+        font-size: 17px;
+        background-color: #d32323;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        margin-left: 19px;
+        margin-top: 78px;
+        border-style: solid;
+    
+    }
+
+    .hours > p {
+        background-color: #d32323;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 81px;
+        left: 24px;
+        width: 84%;
+    
+    }
+
+    .topNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #d32323;
+        display: flex;
+    }
+    
+    .topNav > a {
+        color: #4A543B;
+        background-color: #d32323;
+        height: 41px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Permanent Marker', cursive;
+        flex: 1;
+    }
+    
+    .topNav a:hover {
+        background-color: #A1A13B;
+        color: #d32323;
+    }
+    
+    .topNav a:active {
+        background-color:  #E8A60C;
+        color: #4A543B;
+    }
+    
+    .fish {
+        visibility: hidden;
+        right: 253%;
+    }
+    
+    .mainDescription {
+        font-size: 32px;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-top: -294px;
+        margin-left: 70px;
+    }
+    
+    .topDescription {
+        width: 120%;
+        margin-left: 66px;
+    }
+
+    .mainDescription > p {
+        font-size: 16px;
+        width: 200%;
+        font-family: 'Permanent Marker', cursive;
+    }
+   
+    .footer {
+        text-align: center;
+        margin-left: 91%;
+    }
+    
+    .footer > p {
+        margin-left: -30px;
+        font-family: 'Permanent Marker', cursive;
+        margin-top: -3%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    * {
+        background-color: #4A543B;
+        margin: 0;
+    }
+    
+    header {
+        display: flex;
+    }
+    
+    #lanterns {
+        visibility: hidden;
+    }
+
+    .welcome {
+        font-family: 'Kaushan Script', cursive;
+        color: #E8A60C;
+        margin-left: -579px;
+        margin-top: 13%;
+    }
+    
+    .title {
+        font-size: 124px;
+        margin-left: 213px;
+    }
+    
+    .culture {
+        color: black;
+        font-size: 37px;
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    .circles {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Permanent Marker', cursive;
+        margin-left: 110px;
+    
+    }
+  
+    .address {
+        font-size: 20px;
+        background-color: #d32323;
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+        border-style: solid;
+    }
+
+    .address > p {
+        background-color: #d32323;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 70px;
+        left: 17px;
+    }
+
+    .hours {
+        font-size: 17px;
+        background-color: #d32323;
+        border-radius: 50%;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        margin-left: 19px;
+        margin-top: 78px;
+        border-style: solid;
+    
+    }
+
+    .hours > p {
+        background-color: #d32323;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: 81px;
+        left: 24px;
+        width: 84%;
+    
+    }
+
+    .topNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background-color: #d32323;
+        display: flex;
+    }
+    
+    .topNav > a {
+        color: #4A543B;
+        background-color: #d32323;
+        height: 41px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Permanent Marker', cursive;
+        flex: 1;
+    }
+    
+    .topNav a:hover {
+        background-color: #A1A13B;
+        color: #d32323;
+    }
+    
+    .topNav a:active {
+        background-color:  #E8A60C;
+        color: #4A543B;
+    }
+    
+    .fish {
+        visibility: hidden;
+        right: 253%;
+    }
+    
+    .mainDescription {
+        font-size: 38px;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-top: -235px;
+        margin-left: 141px;
+    
+    }
+    
+    .topDescription {
+        width: 120%;
+        margin-left: 70px;
+    }
+
+    .mainDescription > p {
+        font-size: 16px;
+        width: 200%;
+        margin-left: -121px;
+        font-family: 'Permanent Marker', cursive;
+    }
+   
+    .footer {
+        text-align: center;
+        margin-left: 25%;
+    }
+    
+    .footer > p {
+        margin-left: -6px;
+        font-family: 'Permanent Marker', cursive;
+        margin-top: -3%;
+        font-size: 20px;
+    
+    }
+}
+

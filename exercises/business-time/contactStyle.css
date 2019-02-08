@@ -1,115 +1,360 @@
-body {
-    background-color: #4A543B;
-    margin: 0;
-}
+@media (min-width: 1440px) {
 
-.background {
-display: flex;
-height: 567px;
-margin-left: 18%;
-}
+    body {
+        background-color: #4A543B;
+        margin: 0;
+    }
 
-.topNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
+    .background {
     display: flex;
+    height: 567px;
+    margin-left: 18%;
+    }
+
+    .topNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    .topNav > a {
+        color: #4A543B;
+        background-color: #128793;
+        height: 37px;
+        text-decoration: none;
+        font-size: 29px;
+        font-family: 'Permanent Marker', cursive;
+        flex: 1;
+    }
+
+    .topNav a:hover {
+        background-color: #A1A13B;
+        color: #e0642b;
+    }
+
+    .topNav a:active {
+        background-color:  #E8A60C;
+        color: #4A543B;
+    }
+
+    .allHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome {
+        display: flex;
+        font-family: 'Kaushan Script', cursive;
+        color: #e0642b;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+
+    .title {
+        font-size: 130px;
+    }
+
+    .culture {
+        color: black;
+        font-size: 29px;
+        justify-content: center;
+        margin-left: 110px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .info {
+        width: 50%;
+        margin-right: 43px;
+        margin-top: 80px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .info > p {
+        margin-top: 0px;
+        margin-bottom: 2px;
+        font-size: 25px;
+    }
+
+    .contactInfo {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        width: 27%;
+        margin-top: -37%;
+        margin-left: 36.5%;
+        color: #37677e;
+    }
+
+    .phone {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        margin-left: 33px;
+    }
+
+    .email {
+        margin-top: 0px;
+        font-size: 36px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 18%;
+    }
+
+    .footer > p {
+        font-family: 'Permanent Marker', cursive;
+        margin-top: -3%;
+        font-size: 20px;
+    }
 }
 
-.topNav > a {
-    color: #4A543B;
-    background-color: #128793;
-    height: 37px;
-    text-decoration: none;
-    font-size: 29px;
-    font-family: 'Permanent Marker', cursive;
-    flex: 1;
+@media (max-width: 768px) {
+
+    body {
+        background-color: #4A543B;
+        margin: 0;
+    }
+
+    .background {
+        visibility: hidden;
+    }
+
+    .topNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    .topNav > a {
+        color: #4A543B;
+        background-color: #128793;
+        height: 31px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: 'Permanent Marker', cursive;
+        flex: 1;
+    }
+
+    .topNav a:hover {
+        background-color: #A1A13B;
+        color: #e0642b;
+    }
+
+    .topNav a:active {
+        background-color:  #E8A60C;
+        color: #4A543B;
+    }
+
+    .allHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .welcome {
+        display: flex;
+        font-family: 'Kaushan Script', cursive;
+        color: #e0642b;
+        flex-direction: column;
+        margin-left: 47px;
+        margin-top: 12px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .culture {
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        margin-left: 81px;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .info {
+        width: 50%;
+        margin-right: 43px;
+        margin-top: 80px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .info > p {
+        margin-top: 169px;
+        margin-bottom: 2px;
+        font-size: 17px;
+        margin-left: -341%;
+        width: 330%;
+    }
+
+    .contactInfo {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-top: -52%;
+        margin-left: 38.5%;
+        color: #37677e;
+    }
+
+    .phone {
+        font-size: 19px;
+        margin-top: 51px;
+        margin-bottom: -11px;
+        margin-left: 74px;
+    }
+
+    .email {
+        margin-top: 0px;
+        font-size: 23px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-left: 62%;
+        margin-right: 0%;
+        margin-top: 18%;
+    }
+
+    .footer > p {
+        font-family: 'Permanent Marker', cursive;
+        margin-top: -18%;
+        font-size: 20px;
+        margin-left: -36px;
+    }
 }
 
-.topNav a:hover {
-    background-color: #A1A13B;
-    color: #e0642b;
-}
+@media (min-width: 768px) and (max-width: 1439px) {
 
-.topNav a:active {
-    background-color:  #E8A60C;
-    color: #4A543B;
-}
+    body {
+        background-color: #4A543B;
+        margin: 0;
+    }
 
-.allHead {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .background {
+        visibility: hidden;
+    }
 
-.welcome {
-    display: flex;
-    font-family: 'Kaushan Script', cursive;
-    color: #e0642b;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-top: 12px;
-}
+    .topNav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+    }
 
-.title {
-    font-size: 130px;
-}
+    .topNav > a {
+        color: #4A543B;
+        background-color: #128793;
+        height: 31px;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: 'Permanent Marker', cursive;
+        flex: 1;
+    }
 
-.culture {
-    color: black;
-    font-size: 29px;
-    justify-content: center;
-    margin-left: 110px;
-    font-family: 'Permanent Marker', cursive;
-}
+    .topNav a:hover {
+        background-color: #A1A13B;
+        color: #e0642b;
+    }
 
-.info {
-    width: 50%;
-    margin-right: 43px;
-    margin-top: 80px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    font-family: 'Permanent Marker', cursive;
-}
+    .topNav a:active {
+        background-color:  #E8A60C;
+        color: #4A543B;
+    }
 
-.info > p {
-    margin-top: 0px;
-    margin-bottom: 2px;
-    font-size: 20px;
-}
+    .allHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.contactInfo {
-    font-family: 'Righteous', cursive;
-    text-align: center;
-    width: 27%;
-    margin-top: -37%;
-    margin-left: 36.5%;
-    color: #37677e;
-}
+    .welcome {
+        display: flex;
+        font-family: 'Kaushan Script', cursive;
+        color: #e0642b;
+        flex-direction: column;
+        margin-left: 167px;
+        margin-top: 12px;
+    }
 
-.phone {
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    margin-left: 33px;
-}
+    .title {
+        font-size: 100px;
+    }
 
-.email {
-    margin-top: 0px;
-    font-size: 36px;
-    font-family: 'Permanent Marker', cursive;
-}
+    .culture {
+        color: black;
+        font-size: 25px;
+        justify-content: center;
+        margin-left: 81px;
+        font-family: 'Permanent Marker', cursive;
+    }
 
-.footer {
-    text-align: center;
-    margin-left: 0%;
-    margin-top: 18%;
-}
+    .info {
+        width: 50%;
+        margin-right: 43px;
+        margin-top: 80px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-family: 'Permanent Marker', cursive;
+    }
 
-.footer > p {
-    font-family: 'Permanent Marker', cursive;
-    margin-top: -3%;
-    font-size: 20px;
+    .info > p {
+        margin-top: 199px;
+        margin-bottom: 2px;
+        font-size: 23px;
+        margin-left: -258%;
+        width: 270%;
+    }
+
+    .contactInfo {
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        margin-top: -42%;
+        margin-left: -8.5%;
+        color: #37677e;
+    }
+
+    img {
+        visibility: hidden;
+    }
+
+    .phone {
+        font-size: 39px;
+        margin-top: 51px;
+        margin-bottom: -11px;
+        margin-left: 91px;
+    }
+
+    .email {
+        margin-top: 0px;
+        font-size: 27px;
+        margin-left: 90px;
+    }
+
+    .footer {
+        text-align: center;
+        margin-left: 62%;
+        margin-right: 0%;
+        margin-top: -2%;
+    }
+
+    .footer > p {
+        font-family: 'Permanent Marker', cursive;
+        margin-top: -18%;
+        font-size: 20px;
+        margin-left: -466px;
+    }
 }
