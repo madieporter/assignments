@@ -1,0 +1,61 @@
+{
+   "appetizers":[
+    {
+        "name": "Nachos",
+        "ingredients": ["tortilla chips", "mexican cheese", "salsa", "jalapenos", "olives"],
+        "description": "The cheesiest nachos the world has ever seen!"
+    },
+    {   "name": "Jalapeno Poppers",
+        "ingredients": ["jalapeno", "mozzaralla", "breading"],
+        "description": "Spicy Jalapeno Poppers with the perfect crunch!"
+    }
+    ],
+    "cold sandwhiches": [
+        {
+        "name": "Tuna Salad",
+        "ingredients": ["tuna", "mayo", "pickles", "onion", "salt", "pepper", "rye bread"],
+        "description": "A well balanced tuna salad, on top of our house made Rye bread."
+    },
+    {
+        "name": "Turkey Avocado",
+        "ingredients": ["turkey", "tomato", "lettuce", "avocado", "special sauce", "whole grain bread"],
+        "description": "Everything you need on one sandwhich."
+    }
+    ],
+    "hot sandwhiches": [
+        {
+            "name": "Rueben",
+            "ingredients": ["pastrami", "corned beef", "saurkraut", "kentucky brown mayo", "rye bread"],
+            "description": "Your favorite rueben meats on one sandwhich with our special sauce, and house made Rye bread."
+        },
+        {
+            "name": "French Dip",
+            "ingredients": ["roast beef", "swiss cheese", "carmelized onions", "au jui", "french baguette"],
+            "description": "Hot and classic! The best au jui in the city."
+        }
+    ],
+    "dessert": [
+        {
+            "name": "Apple Pie",
+            "ingredients": ["apples", "cinnamon", "caramel", "crust", "whipped cream"],
+            "description": "Grandma's recipe and our hand whipped cream."
+        },
+        {
+            "name": "Chocolate Rum Torte",
+            "ingredients": ["chocolate", "rum", "berries", "whiskey cream gelato"],
+            "description": "For chocolate lovers, with a schoop of whiskey cream gelato"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Black and Tan",
+            "ingredients": ["Uinta Cutthroat, Pale Ale", "Guiness"],
+            "description": "A perfect balance of light and dark beer"
+        },
+        {
+            "name": "Whiskey Sour",
+            "ingredients": ["whiskey", "lemon juice", "simple syrup", "bitters", "cherry"],
+            "description": "Boozy, sour, sweet. What more could you ask for?"
+        }
+    ]
+}

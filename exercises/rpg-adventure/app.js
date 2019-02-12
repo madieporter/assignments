@@ -1,12 +1,16 @@
 var ask = require("readline-sync");
 
+
 //Welcome
 var userName = ask.question("What is your name? ");
-console.log("Hello " + userName + ", I'm Leslie Knope. Thank you for coming to the best city in the world, Pawnee, to help with Mission: Cheeto Bomb. President Trump plans to drop the Cheeto Bomb on Pawnee by tomorrow morning. If we allow that to happen everyone in town will turn orange! Lets make our way to City Hall to stop this catastrophe!");
+console.log("Hello " + userName + ", I'm Leslie Knope. \n\n Thank you for coming to the best city in the world, \n\n PAWNEE(!!!), \n\n Our mission is to stop the Cheeto Bomb. \n\n President Trump plans to drop the Cheeto Bomb on Pawnee tomorrow morning. \n\n If we allow that to happen everyone in town will turn orange! \n\n Lets make our way to City Hall to stop this catastrophe!");
 
+
+//Globals
 var isAlive = true;
 var beatTrump = false;
 var totalSteps = 0;
+
 
 //Create Enemies
 function Enemy (name, hp, weapon) {
@@ -16,11 +20,12 @@ function Enemy (name, hp, weapon) {
     this.attack = Math.floor((Math.random()*20) +6);
 }
 
-var jamm = new Enemy("Councilman Jamm", 70, "dental pliers");
-var joan = new Enemy("Joan Callamezzo", 30, "broken wine glass");
-var tammy = new Enemy("Tammy Two", 50, "cleavage");
-var mikeP = new Enemy("Mike Pence", 80, "discrimination");
-var brettK = new Enemy("Brett Kavanaugh", 100, "kisses and hugs");
+var jamm = new Enemy("Councilman Jamm", 30, "dental pliers");
+var joan = new Enemy("Joan Callamezzo", 20, "broken wine glass");
+var tammy = new Enemy("Tammy Two", 25, "cleavage");
+var mikeP = new Enemy("Mike Pence", 40, "discrimination");
+var brettK = new Enemy("Brett Kavanaugh", 40, "kisses and hugs");
+
 
 
 //Random Enemies Function
@@ -40,32 +45,23 @@ function getEnemy() {
     }
 }
 
+
+
 //Create User
 function User(userName, hp) {
     this.name = userName;
     this.hp = hp;
-    this.weapon = ["whipped cream spray can", "power binder", "best friend Anne", "husband Ben"];
+    this.weapon = ["whipped cream spray can to the eyes", "power binder", "best friend Anne", "husband Ben"];
     this.attack = Math.floor((Math.random()*35)+11);
 }
 
-var mainUser = new User(userName, 100);
+var mainUser = new User(userName, 10);
 
-//Create Items
-function Item(name) {
-    this.itemName = name;
-}
 
-var waffles = new Item("waffles");
-var soda = new Item("Sweetums 64oz soda");
-var april = new Item("April");
-var andy = new Item("Andy");
-var tom = new Item("Tom");
-var donna = new Item("Donna");
-var jerry = new Item("Jerry");
 
 //Random Items Function
 function findItems() {
-    var items = ["waffles", "soda", "april", "andy", "tom", "donna", "jerry"]
+    var items = ["waffles", "Sweetums 64oz. Soda", "april", "andy", "tom", "donna", "jerry"]
     var randItem = items[Math.floor(Math.random()*items.length)]
     if (randItem === "waffles") {
         mainUser.hp = mainUser.hp + 20;
@@ -73,19 +69,19 @@ function findItems() {
     } else if (randItem === "soda") {
         mainUser.hp = mainUser.hp + 10;
         console.log("You found " + randItem + "! Your HP is increased by 10!")
-    } else if (randItem === "april") {
+    } else if (randItem === "April") {
         mainUser.hp = mainUser.hp + 15;
         console.log("You found " + randItem + "! Your HP is increased by 15!")
-    } else if (randItem === "andy") {
+    } else if (randItem === "Andy") {
         mainUser.hp = mainUser.hp + 7;
         console.log("You found " + randItem + "! Your HP is increased by 7!")
-    } else if (randItem === "tom") {
+    } else if (randItem === "Tom") {
         mainUser.hp = mainUser.hp + 15;
         console.log("You found " + randItem + "! Your HP is increased by 15!")
-    } else if (randItem === "donna") {
+    } else if (randItem === "Donna") {
         mainUser.hp = mainUser.hp + 10;
         console.log("You found " + randItem + "! Your HP is increased by 10!")
-    } else if (randItem === "jerry") {
+    } else if (randItem === "Jerry") {
         mainUser.hp = mainUser.hp + 3;
         console.log("You found " + randItem + "! Your HP is increased by 3!")
     }
@@ -93,62 +89,112 @@ function findItems() {
 }  
 
 
+
+// Play Game
 while (isAlive && !beatTrump) {
-    var playGame = ask.keyIn("Keep walking to City Hall [w], or quit the game [q].", {limit: "wiq"});
-    if (playGame === "w") {
+function startGame() {
+    var playGame = ask.question("Check your inventory[i] \nOR \n walk[w] to City Hall. \n Any other key to quit.", {limit: ["w", "i", "q"]});
+    if (playGame === "i"){
+        console.log("Inventory: \n Name: " + userName + "\n Weapons: " + mainUser.weapon + "\n HP: " + mainUser.hp)
+    } else if (playGame === "w") {
         walk()
-    } else if (playGame === "i") {
-        checkInventory()
-    } else if (playGame === "q") {
-        quitGame()
-    }
-    else {
-        break;
+    } else {
+        return isAlive = false;
     }
 }
 
+
+
 //Walking Function
 function walk () {
-    var walking = true;
+    var walking = choseWalking();
+
     while (walking) {
         var steps = Math.floor(Math.random()*10);
         totalSteps = totalSteps + steps;
-        console.log(totalSteps);
-        if (totalSteps === 20) {
-            console.log("You made it to City Hall and captured the Cheeto Bomb! You successfully defeated President Trump.");
+        console.log(totalSteps)
+        if (totalSteps === 30) {
+            console.log("You made it to City Hall and captured the Cheeto Bomb! \n\n You successfully defeated President Trump.");
             walking = false;
             beatTrump = true;
             return beatTrump
         }
         if (steps >= 5) {
-            var fightOrRun = ask.question("Do you want to fight? [f] or run? [r]");
+            var fightOrRun = ask.question("OH, GREAT! \n\n Looks like we got some trouble on our hands. \n\n Someone always has to be in a woman's way! \n\n Do you want to fight this punk? [f] or run? [r]");
             if (fightOrRun === "f") {
                 fight()
             } else {
                 run()
             }
-            walking = false;
         } else if (steps <= 4){
             findItems()
+            choseWalking()
         } 
-        return totalSteps
     }
 }
 
+
+
+//Keep Walking
+function choseWalking () {
+    var askWalk = ask.keyIn("Keep walking to City Hall [w], check inventory [i], or quit the game [q].", {limit: ["w", "i", "q"]});
+    if (askWalk === "w") {
+        return true
+    } else if (askWalk === "i") {
+        console.log("Inventory: \n Name: " + userName + "\n Weapons: " + mainUser.weapon + "\n HP: " + mainUser.hp)
+        return true
+    } else if (askWalk === "q") {
+        return isAlive = false
+    }
+}
+
+
+
 // Fight Function
-function fight(randEnemy) {
+function fight() {
     var fightEnemy = getEnemy();
     var randWeapon = mainUser.weapon[Math.floor(Math.random()* mainUser.weapon.length)]
     mainUser.hp -= fightEnemy.attack
     fightEnemy.hp -= mainUser.attack
-    console.log("Great job, " + userName + ". You used your " + randWeapon + " and your health is now " + mainUser.hp);
-    console.log(fightEnemy.name + " even used their " + fightEnemy.weapon + " against you, and yet their health is " + fightEnemy.hp);
-    walk ()
+    if (fightEnemy.hp <= 0) {     
+        mainUser.hp += Math.floor((Math.random()*10)+10);
+        console.log("You sent " + fightEnemy.name + " back to the scum in which they belong, \n\n using your " + randWeapon + ". \n\n Plus, you gained some HP! \n\n You're new HP is " + mainUser.hp + ".")
+    }else if (mainUser.hp <= 0) {
+        console.log(fightEnemy + " got you. Evil wins again. Don't worry, 2020 is just around the corner.")
+        isAlive = false;
+    } else {
+    console.log("Great job, " + userName + ". \n\n You used your " + randWeapon + " \n\n and your health is now " + mainUser.hp);
+    console.log(fightEnemy.name + " even used their " + fightEnemy.weapon + " against you, \n\n and yet their health is at " + fightEnemy.hp);
+    }
+    choseWalking()
 }
+
+
 
 //Run Function 
 function run() {
-    
+    var running = Math.floor(Math.random()*10);
+    if (running >= 5) {
+        enemyAttack()
+    } else if (running <= 4) {
+        walk()
+        console.log("You have escaped from" + getEnemy + "! Keep walking to city hall.")
+    }
 }
 
 
+
+//Attack Function
+function enemyAttack () {
+    var enemyAttacker = getEnemy();
+    mainUser.hp -= enemyAttacker.attack
+    console.log (enemyAttacker.name + " popped out of nowhere \n\n and attacked you with their " + enemyAttacker.weapon + ". \n]\n Your HP is now " + mainUser.hp + ".");
+    if (mainUser.hp <= 0) {
+        console.log(enemyAttacker + " got you. Evil wins again. Don't worry, 2020 is just around the corner.")
+        isAlive = false;
+    }
+}
+
+
+startGame()
+}
