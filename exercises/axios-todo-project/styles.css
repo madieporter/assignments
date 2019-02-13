@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #BCFFED;
+}
+
+.header {
+    font-size: 100px;
+}
+
+#todos {
+    font-size: 30px;
+}
