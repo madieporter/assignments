@@ -1,13 +1,59 @@
 body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    background-color: #BCFFED;
+    background-color: #587D56;
 }
 
 .header {
-    font-size: 100px;
+    font-size: 50px;
+    color: #FFB7FF;
 }
 
-#todos {
+.h2 {
+    font-size: 45px;
+}
+#todoList {
     font-size: 30px;
 }
+
+.strikened {
+    text-decoration: line-through;
+}
+
+.addNewTodo {
+    font-size: 50px;
+    border: solid;
+    margin: 200px;
+}
+
+.newHeaders {
+    font-size: 30px;
+    
+}
+
+input[type=text] {
+    text-align: center;
+    font-size: 18px;
+    width: 35%;
+    height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #FFB7FF;
+  }
+  
+  .button {
+    background-color: #FFB7FF;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 18px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {opacity: 1}

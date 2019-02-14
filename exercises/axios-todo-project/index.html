@@ -10,16 +10,46 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Explore the Spiral Jetty</h1>
     </header>
-
     <br>
 
     <section>
-        <h2>Adventure To Do's:</h2>
-        <p id="name"></p>
+        <h2 class="h2">Adventure To Do's:</h2>
+
+        <div id="todoList"></div>
+        
     </section>
+    <br>
+
+    <div class="addNewTodo">Add New To Dos:<br>
+
+        <form name="inputNew" id="inputNew">
+        <div class="newHeader">"What task do you need to get done?"<br>
+            <input type="text" id="newTitle" name="title" placeholder="title"/><br>
+        </div><br>
+
+        <div class="newHeaders">"Describe your task."<br>
+            <input type="text" id="newDescription" name="description" placeholder="description"/><br>
+        </div><br>
+
+        <div class="newHeaders">"How much does it cost?"<br>
+            <input type="number" id="newPrice" name="price"/><br>
+        </div><br>
+
+        <div class="newHeaders">"Place and image link."<br>
+        <input type="text" id="newImage" name="img" placeholder="image link"/><br>
+         </div><br>
+
+        <div class="newHeaders">"Have you completed this task?"<br>
+        <input type="text" id="newCompleted" name="complete" placeholder="true or false"/><br>
+
+        <button type="submit" class="button">Submit New Task</button>
+    </div><br>
+    </form>
+
+  
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>

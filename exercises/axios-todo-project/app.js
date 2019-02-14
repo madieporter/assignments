@@ -1,23 +1,66 @@
 axios.get("https://api.vschool.io/madisonlynn/todo/").then(function(response) {
-
-    console.log(response.data)
-
-    var arr = response.data
-
-    //Working
-    arr.map(function(item) {
-    document.getElementById("name").innerHTML += `${item.title}<br>`;
-    document.getElementById("name").innerHTML += `${item.description}<br>`;
-    document.getElementById("name").innerHTML += `Price: $ ${item.price}<br>`;
-    document.getElementById("name").innerHTML += `<img src="${item.imgUrl}"/><br>`;
-    });
+    renderTodos(response.data)
 })
 
-//New code
-var container = document.createElement("div");
-var title = document.createElement("h3");
-var para = document.createElement("p");
-var input = document.createElement("input");
-var imgUrl = document.createElement("img");
-imgUrl.setAttribute("src, `${arr[i].imgUrl}")
+function renderTodos(todos) {
+    todos.forEach(function(todo) {
+        var parent = document.createElement("div");
+        parent.className = "todo";
+        var text = document.createTextNode(todo.title);
+        parent.appendChild(text);
 
+        var input = document.createElement("input");
+        input.className = "input";
+        input.type = "checkbox";
+
+        var description = document.createElement("p");
+        description.className = "description";
+        var textTwo = document.createTextNode(todo.description);
+        description.appendChild(textTwo);
+
+        var price = document.createElement("div");
+        price.className = "price";
+        var textThree = document.createTextNode(`Total Price: $ ${todo.price}`);
+        price.appendChild(textThree);
+
+        var imgUrl = document.createElement("img");
+        imgUrl.setAttribute("src", `${todo.imgUrl}`)
+
+        input.addEventListener("click", handleCheck);
+
+        parent.appendChild(input); 
+
+        if(todo.completed) {
+            parent.classList.toggle("strikened");
+            input.checked = true;
+        }
+
+        document.getElementById("todoList").appendChild(parent);
+        document.getElementById("todoList").appendChild(description);
+        document.getElementById("todoList").appendChild(price);
+        document.getElementById("todoList").appendChild(imgUrl)
+    })
+}
+
+function handleCheck(e) {
+    e.target.parentNode.classList.toggle("strikened");
+}
+
+document.inputNew.addEventListener("click", function (e) {
+    e.preventDefault;
+    var url = "https://api.vschool.io/madisonlynn/todo/";
+    var postNewToDo = {
+        "title": document.getElementById("newTitle").value,
+        "description": document.getElementById("newDescription").value,
+        "price": document.getElementById("newPrice").value,
+        "img": document.getElementById("newImage").value,
+        "completed": document.getElementById("newCompleted").value
+        }
+        axios.post(url, postNewToDo).then(function(response) {
+            console.log(response.data);
+        }).catch(function(error){
+            console.log(error);
+        }
+        )
+    }
+)
