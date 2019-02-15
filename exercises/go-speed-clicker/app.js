@@ -10,7 +10,7 @@ var count = localStorage.count || 0
 
 document.getElementById("button").addEventListener("click", function() {
     count++ 
-    localStorage.count = count
+    localStorage.count = count;
     button.textContent = count;
 });
 console.log(count)

@@ -5,13 +5,20 @@ axios.get("https://api.vschool.io/madisonlynn/todo/").then(function(response) {
 function renderTodos(todos) {
     todos.forEach(function(todo) {
         var parent = document.createElement("div");
-        parent.className = "todo";
+        parent.id = todo._id;
         var text = document.createTextNode(todo.title);
         parent.appendChild(text);
 
         var input = document.createElement("input");
         input.className = "input";
         input.type = "checkbox";
+        parent.appendChild(input); 
+
+        var button = document.createElement("button");
+        button.className = "delete";
+        var textFour = document.createTextNode("delete");
+        button.appendChild(textFour);
+        parent.appendChild(button);
 
         var description = document.createElement("p");
         description.className = "description";
@@ -27,8 +34,9 @@ function renderTodos(todos) {
         imgUrl.setAttribute("src", `${todo.imgUrl}`)
 
         input.addEventListener("click", handleCheck);
+        button.addEventListener("click", deleteTodo);
 
-        parent.appendChild(input); 
+        
 
         if(todo.completed) {
             parent.classList.toggle("strikened");
@@ -44,7 +52,31 @@ function renderTodos(todos) {
 
 function handleCheck(e) {
     e.target.parentNode.classList.toggle("strikened");
+    var url = "https://api.vschool.io/madisonlynn/todo/" + e.target.parentNode.id;
+    if (e.target.parentNode.classList == "strikened") {
+        var checked = {
+            "completed": true
+        }
+    } else {
+        var checked = {
+            "completed": false
+        }
+    } axios.put(url, checked).then(function(response) {
+        console.log(response.data);
+    }).catch(function(error){
+        console.log(error);
+    }
+    )
 }
+
+function deleteTodo(e) {
+    var url = "https://api.vschool.io/madisonlynn/todo/" + e.target.parentNode.id;
+    axios.delete(url).then(function(response) {
+        console.log(response.data);
+    }).catch(function(error){
+        console.log(error);
+    })
+} 
 
 document.inputNew.addEventListener("click", function (e) {
     e.preventDefault;
@@ -53,7 +85,7 @@ document.inputNew.addEventListener("click", function (e) {
         "title": document.getElementById("newTitle").value,
         "description": document.getElementById("newDescription").value,
         "price": document.getElementById("newPrice").value,
-        "img": document.getElementById("newImage").value,
+        "imgUrl": document.getElementById("newImage").value,
         "completed": document.getElementById("newCompleted").value
         }
         axios.post(url, postNewToDo).then(function(response) {
@@ -62,5 +94,6 @@ document.inputNew.addEventListener("click", function (e) {
             console.log(error);
         }
         )
-    }
-)
+})
+
+

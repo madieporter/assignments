@@ -1,0 +1,15 @@
+.grid {
+    display: grid;
+}
+
+.header {
+    height: 100px;
+}
+
+.footer {
+    height: 100px;
+}
+
+.social-container {
+    height: 200px;
+}
