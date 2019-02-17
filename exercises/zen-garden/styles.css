@@ -1,3 +1,193 @@
+@font-face {
+    font-family: font1;
+    src: url(font1.woff2); 
+}
+
+
+@font-face {
+    font-family: font3;
+    src: url(contentFont.woff2);
+}
+
+@font-face {
+    font-family: topFont;
+    src: url(topFont.woff2);
+}
+
+@font-face {
+    font-family: funFont;
+    src: url(verdemoderna.ttf)
+}
+
 @media (max-width: 767px) {
+    * {
+        margin: auto;
+    }
+
+    .dotted {
+        border-bottom: 1px dotted #c1cecd;
+    }
+
+    .header {
+        background-image: url(gridlines-opaque.png), url(contours-opaque.png), url(huntington.jpg);
+        background-size: auto, auto, cover;
+        height: 240px;
+        text-align: center;
+        opacity: 0.9;
+        border-top: solid 10px #163d41;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-top: 24px;
+        opacity: 0.6;
+        
+    }
+
+    .title {
+        font-family: topFont;
+        color: white;
+        font-size: 28px;
+    }
+
+    .titleDescrip {
+        font-family: font1;
+        color: white;
+        opacity: 0.6;
+        font-size: 17px;
+    }
+
+    .nav {
+        height: 60px;
+        width: 100%;
+        top: 190px;
+        position: absolute;
+        text-align: center;
+        display: flex;
+        background-color: #ffffff42;
+        color: white;
+    }
+
+    .nav:hover {
+        background-color: #ffffffc0;
+        cursor: pointer;
+        transition-duration: 1s;
+        
+    }
+
+    .viewAll {
+        font-family: topFont;
+        font-size: 18px;
+        flex: 6;
+        opacity: 0.6;
+        margin-left: 72px;
+    }
+
+    .arrowRight {
+        font-family: funFont;
+        font-size: 45px;
+        flex: 1;
+        opacity: 0.6;
+    }
+
+    .content {
+        color: #325050;
+    }
+
+    .mainContent {
+        margin-top: 20px;
+        font-family: font3;
+        font-size: 13px;
+        line-height: 1.8em;
+        word-spacing: 3px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .download {
+        display: none;
+    }
+
+    .contentHeader {
+        font-family: topFont;
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .greenBamboo {
+        background-image: url(gridlines-opaque.png), url(contours-opaque.png), url(bamboo.png);
+        background-size: auto, auto, cover;
+        background-color: #32814e44;
+    }
+
+    .contentHeader2 {
+        font-family: topFont;
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .mainContent2 {
+        font-family: topFont;
+        margin-top: 20px;
+        font-family: font3;
+        font-size: 13px;
+        line-height: 1.8em;
+        word-spacing: 3px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer{
+        background-image: url(gridlines-opaque.png), url(contours-opaque.png), url(koi.jpg);
+        background-size: auto, auto, cover;
+        height: 240px;
     
+    }
+
+    .footerContent {
+        font-family: font1;
+        color: #ffffff42;
+        text-align: center;
+        line-height: 1.8em;
+        word-spacing: 3px;
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    .footerBold {
+        font-family: font3;
+        color: #ffffffd3;
+        opacity: 0.8;
+    }
+
+    .footerLinks {
+        font-family: funFont;
+        display: flex;
+        background-color: #163d41;
+        height: 112px;
+        color: #ffffff86;
+        text-align: center;
+        font-size: 45px;
+        display: flex;
+        margin-top: -62px;
+    }
+
+    .linksInFoot {
+        flex: 1;
+        width: 1px;
+        border-radius: 50%;
+
+    }
+
+    .linksInFoot:hover {
+        background-color: #ffffff42;
+        color: #163d41;
+        cursor: pointer;
+        transition-duration: 1s;
+        border-radius: 50%;
+
+    }
 }
