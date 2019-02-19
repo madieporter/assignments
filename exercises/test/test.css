@@ -1,4 +1,4 @@
-*{
+/* *{
     font-size: 20px;
 }
 
@@ -42,4 +42,146 @@ div>div {
     .links {
         grid-row: 3/4;
     }
+} */
+
+
+.sideOne {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+}
+
+.sideTwo {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 3;
+    grid-column: 3/ span 1;
+    grid-row: 1/ span 2;
+}
+
+.sideThree {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column: 1/ span 2;
+    grid-row: 2/ span 2;
+}
+
+.sideFour {
+    grid-column-start: 3;
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 2;
+}
+
+.sideFive {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column: 1/ span 2;
+    grid-row: 3/ span 2;
+}
+
+.sideSix {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-start: 3;
+    grid-column: 3/ span 2;
+    grid-row: 3/ span 2;
+}
+
+.sideSeven {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 1;
+    grid-column: 1/ span 2;
+    grid-row: 4/ span 2;
+}
+
+.sideEight {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-start: 3;
+    grid-column: 3/ span 2;
+    grid-row: 4/ span 2;
+    margin-bottom: auto;
+}
+
+.sidebarBamboo {
+    background-image: url(bamboo.png);
+    background-size: cover;
+    background-color: #32814e4f;
+    height: 270px;
+    display: grid;
+    box-sizing: border-box;
+    grid-auto-rows: 70px;
+    font-family: topFont;
+    font-size: 15px;
+    color: #325050;
+}
+
+.sideNine {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 35px;
+    grid-column-start: 1;
+    grid-column: 1/ span 1;
+    grid-row: 1/ span 1;
+    width: 100%;
+}
+
+.sideTen {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: auto;
+    grid-column-start: 3;
+    grid-column: 3/ span 2;
+    grid-row: 1/ span 2;
+    width: 100%;
+}
+
+.sideEleven {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 45px;
+    grid-column-start: auto;
+    grid-column: 1/ span 1;
+    grid-row: 2/ span 2;
+    width: 100%;
+}
+
+.sideTwelve {
+    margin-left: 20%;
+    margin-right: 70%;
+    margin-top: 42px;
+    grid-column-start: 3;
+    grid-column: 3/ span 2;
+    grid-row: 2/ span 2;
+    width: 100%;
+}
+
+.sideThirteen {
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-column-start: 1;
+    grid-column: 1/ span 2;
+    grid-row: 3/ span 2;
+}
+
+.by {
+    font-family: font1;
+    color: #797979ad;
+    font-size: 14px;
+}
+
+.author {
+    font-family: font3;
+    color: #325050;
+    font-size: 12px;
 }
