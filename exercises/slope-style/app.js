@@ -92,19 +92,19 @@
 // console.log(peopleObj(populatePeople(["Frank Perverson", "Suzy Degaul", "Liza Jones"])));
 
 
-class Person {
-    constructor(name, catchPhrase, hairColor) {
-        this.name = name;
-        this.hairColor = hairColor;
-        this.catchPhrase = catchPhrase;
-    }
-    speak() {
-        return this.catchPhrase
-    }
-    setHairColor(newColor) {
-        this.hairColor = newColor
-        return this.hairColor
-    }
-}
+// class Person {
+//     constructor(name, catchPhrase, hairColor) {
+//         this.name = name;
+//         this.hairColor = hairColor;
+//         this.catchPhrase = catchPhrase;
+//     }
+//     speak() {
+//         return this.catchPhrase
+//     }
+//     setHairColor(newColor) {
+//         this.hairColor = newColor
+//         return this.hairColor
+//     }
+// }
 
 
