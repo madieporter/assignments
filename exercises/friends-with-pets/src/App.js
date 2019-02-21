@@ -76,7 +76,7 @@ const App = () => {
       display: "flex",
       flexWrap: "wrap",
       flexDirection: "row",
-      justifyContent: "Center",
+      justifyContent: "center",
       backgroundImage: "url(https://i.pinimg.com/originals/55/cb/b4/55cbb428999d086bd73077a5cedb7ebd.jpg",
       height: "100vh"
     }
