@@ -9,6 +9,7 @@ const InfoBox = (props) => {
         textAlign: "center",
         fontFamily: "'Baloo Bhaina', cursive",
         fontSize: "30px",
+        boxShadow: "8px 10px #dc5c99",
         backgroundColor: props.backgroundColor
     }
 

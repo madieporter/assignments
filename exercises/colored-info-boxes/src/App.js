@@ -7,7 +7,10 @@ const App = () => {
   display: "flex",
   flexWrap: "wrap",
   flexDirection: "row",
-  justifyContent: "center"
+  justifyContent: "center",
+  backgroundImage: "url(https://image.freepik.com/free-vector/seamless-abstract-square-background-pattern-vector-illustration-from-random-rotated-squares-with-opacity-effect_1164-1113.jpg)",
+  backgroundAttachment: "fixed",
+  cursor: "cell"
 }
 
   return (
