@@ -5,8 +5,13 @@ import Items from "./Items";
 import Footer from "./Footer";
 
 const App = () => {
+
+    const style = {
+        backgroundImage: "url(https://banner2.kisspng.com/20180413/kgq/kisspng-stock-photography-royalty-free-water-bubbles-5ad10c1156e3d2.7410806015236495533559.jpg)";
+    }
+
     return (
-    <div>
+    <div styles={style}>
         <NavBar />
         <Info />
         <Items />

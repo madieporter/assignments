@@ -2,10 +2,6 @@ import React from "react";
 
 const Footer = () => {
 
-    const styles = {
-
-    }
-    
     return (
         <div>
             <div id="thanks">Thank you for visiting!</div>
