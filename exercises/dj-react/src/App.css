@@ -1,0 +1,10 @@
+.button {
+    border-radius: 50%;
+    background-color: #FF00D3;
+    width: 175px;
+    height: 175px;
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    border: 1px #FF00D3;
+}
+

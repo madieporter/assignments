@@ -1,8 +1,15 @@
 import React from "react";
 
 const NavBar = () => {
+
+    const styles = {
+        width: "30px",
+        height: "20px"
+        
+    }
+
     return ( 
-        <div className="navBar">
+        <div className="navBar" style={styles}>
             <div className="box1">E-mail Signup</div>
             <div className="box2">Trending</div>
             <div className="box3">Recipes</div>

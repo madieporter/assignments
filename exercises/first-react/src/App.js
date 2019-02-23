@@ -7,14 +7,19 @@ import Footer from "./Footer";
 const App = () => {
 
     const style = {
-        backgroundImage: "url(https://banner2.kisspng.com/20180413/kgq/kisspng-stock-photography-royalty-free-water-bubbles-5ad10c1156e3d2.7410806015236495533559.jpg)";
+        backgroundImage: "url(https://buidln.clipdealer.com/009/297/195//previews/7--9297195-Beautiful%20Water%20Bubbles%20Rising%20Up.%20Loopable%203d%20Animation%20of%20Sparkling%20Water%20on%20White%20and%20Black%20Backgrounds.%20HD%201080..jpg)",
+        height: "100vh",
+        display: "flex",
+        flexWrap: "wrap",
+        flexDirection: "row",
+        justifyContent: "center"
     }
 
     return (
-    <div styles={style}>
+    <div style={style}>
         <NavBar />
-        <Info />
         <Items />
+        <Info />
         <Footer />
     </div>
     )
