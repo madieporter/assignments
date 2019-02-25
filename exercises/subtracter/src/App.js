@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class App extends Component {
   //extends alllow the instructor to inherit the Compnent properties
   constructor () {
-    super () //constructor functions must have super() n
+    super () //constructor functions must have super() 
 
     this.state = {
       counter: 100
