@@ -36,16 +36,17 @@ class App extends Component {
   
 
     return ( //this is what displays on the webpage, must be in the render 
-      <form onSubmit={this.handleSubmit}>
-      <input type="text" value={this.state.firstName} name="firstName" placeholder="First Name" onChange={this.handleChange}/>
+      //the handleSubmit function must be in the form tag, to read it as a form input
+      //onChange when the input field is changed
+      <form onSubmit={this.handleSubmit}>  
+      <input type="text" value={this.state.firstName} name="firstName" placeholder="First Name" onChange={this.handleChange}/> 
       <br/>
       <input type="text" value={this.state.lastName} name="lastName" placeholder="Last Name" onChange={this.handleChange}/>
       <button>Submit</button>
       <h1>{this.state.firstName} {this.state.lastName}</h1>
       <ul>{nameMap}</ul>
-
       </form>
-    );
+    )
   }
 }
 
