@@ -108,3 +108,19 @@
 // }
 
 
+// const arr = [ 2, 5, 3, 3, 35, 38 ];
+// const addSub10 = arr.map( num => {
+//     if(num <= 10){
+//          num += 10
+//      } else {
+//          num -= 10
+//      }
+// })
+
+// console.log( addSub10 )
+
+function myFunc(...items){
+    let myArr = items;
+    return myArr;
+}
+console.log(myFunc(1, 2, 3, 4, 5))
