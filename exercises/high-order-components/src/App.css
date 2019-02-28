@@ -1,0 +1,42 @@
+.show {
+  display: block;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.cardOne {
+  width: 200pt;
+  height: 200pt;
+  background-color: blue;
+  font-size: 50pt;
+}
+
+.cardTwo {
+  width: 200pt;
+  height: 200pt;
+  font-size: 50pt;
+}
+
+.blue {
+  width: 200pt;
+  height: 200pt;
+  background-color: blue;
+  margin-top: 20pt;
+}
+
+.red {
+  width: 200pt;
+  height: 200pt;
+  background-color: red;
+  margin-top: 20pt;
+}
+
+.btn {
+  width: 200pt;
+  height: 200pt;
+  background-color: blue;
+  margin-top: 20pt;
+  font-size: 50pt;
+}
