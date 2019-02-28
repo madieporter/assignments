@@ -111,7 +111,8 @@
 
 .header {
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  font-size: 45px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  color: white;
 }
