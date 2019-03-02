@@ -18,7 +18,7 @@ class ToggleOne extends Component {
             <Comp on={this.state.on} toggle={this.toggle}{...this.props}/>
         )
     }
-}
+} 
 
 export default ToggleOne;
 

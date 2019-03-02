@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Product.js";
 import {Link, Switch, Route} from "react-router-dom";
 
 import list from "./products.json";
@@ -16,7 +17,7 @@ const Services = () => {
             </div>
 
             <Switch>
-                <Route path="/products/:_id" component={Services} />
+                <Route path="/products/:_id" component={Product} />
             </Switch>
         </div>
     )
