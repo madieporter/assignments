@@ -8,7 +8,13 @@ class Form extends Component {
         this.state = {
             title: "",
             description: "",
-            button: props.button || "Click Here"
+        }
+    }
+
+    componentDidMount() {
+        if(this.props.type === "edit") {
+            let {title, description} = this.props.uglyThing
+            this.setState({title, description})
         }
     }
 
@@ -17,23 +23,32 @@ class Form extends Component {
     }
 
     handleSubmit = e => {
-
+        e.preventDefault()
+        this.props.type === "addNew" ? this.props.postUglyThing(this.state) : this.props.editUglyThing(this.props.uglything._id, this.state)
     }
 
     render() {
-        <form>
-            <input type="text" 
-            placeholder="Ugly Thing Name"
-            name="name"
-            value={this.state.title}
-            onChange={this.handleChange} />
-            <input type="text" 
-            placeholder="Ugly Thing Description"
-            name="description"
-            value={this.state.description}
-            onChange={this.handleChange} />
-            <button>{this.state.button}</button>
-        </form>
+        return (
+            <form>
+                <input type="text" 
+                    placeholder="Ugly Thing Name"
+                    name="name"
+                    value={this.state.title}
+                    onChange={this.handleChange} />
+                <input type="text" 
+                    placeholder="Ugly Thing Description"
+                    name="description"
+                    value={this.state.description}
+                    onChange={this.handleChange} />
+                <input type="text"
+                    value={this.state.imgUrl}
+                    name="imgUrl"
+                    placeholder="Image URL"
+                    onChange={this.handleChange} />
+                    <button>{this.props.button}</button>
+            </form>
+        )
+       
     }
 }
 

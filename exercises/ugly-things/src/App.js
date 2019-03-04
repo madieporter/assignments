@@ -1,5 +1,5 @@
 import React from 'react';
-import UglyThings from "./UglyThings.js";
+import UglyThingsList from "./UglyThingsList.js";
 import Form from "./Form.js"
 
 import './App.css';
@@ -7,8 +7,8 @@ import './App.css';
 const App = () => {
   return (
     <div>
+      <UglyThingsList />
       <Form button="Submit" type="addNew" />
-      <UglyThings />
     </div>
   )
 }

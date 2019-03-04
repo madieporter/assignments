@@ -13,9 +13,9 @@ class UglyThingsProvider extends Component {
 
     //GET
     getUglyThings = () => {
-        axios.get("https://api.vschool.io/uglymadie/todo/").then(res => {
+        axios.get("https://api.vschool.io/uglymadie/todo/").then(response => {
             this.setState({
-                uglythings: response.data
+                uglyThings: response.data
             })
         })
     }
@@ -42,7 +42,7 @@ class UglyThingsProvider extends Component {
     deleteUglyThing = id => {
         axios.delete(`https://api.vschool.io/uglymadie/todo/${id}`).then(response => {
             this.setState(prevState => ({
-                todos: prevState.todos.filter(todo => todo._id !== id)
+                uglyThing: prevState.todos.filter(todo => todo._id !== id)
             }))
         })
     } 
