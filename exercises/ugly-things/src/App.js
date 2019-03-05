@@ -7,6 +7,7 @@ import './App.css';
 const App = () => {
   return (
     <div>
+      <header className="header">Ugly Woobies</header>
       <UglyThingsList />
       <Form button="Submit" type="addNew" />
     </div>

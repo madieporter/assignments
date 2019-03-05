@@ -21,14 +21,14 @@ class UglyThings extends Component {
         let {uglyThing, deleteUglyThing} = this.props;
         console.log(this.props)
         return (
-            <div>
+            <div className="all">
                  {this.state.toggled ?
-                    <div>
-                        <h1>{uglyThing.title}</h1>
-                        <p>{uglyThing.description}</p>
-                        <img src={uglyThing.imgUrl} alt=""/>
-                        <button onClick={() => deleteUglyThing(uglyThing._id)}>DELETE</button>
-                        <button onClick={this.toggle}>EDIT</button>
+                    <div className="mainBox">
+                        <h3 className="title">{uglyThing.title}</h3>
+                        <p className="descrip">{uglyThing.description}</p>
+                        <img className="images" src={uglyThing.imgUrl} alt=""/><br></br>
+                        <button className="btn" onClick={() => deleteUglyThing(uglyThing._id)}>DELETE</button>
+                        <button className="btn" onClick={this.toggle}>EDIT</button>
                     </div>
             :
                 <Form button="SAVE CHANGES" type="edit" uglyThing={uglyThing} />

@@ -29,23 +29,27 @@ class Form extends Component {
 
     render() {
         return (
-            <form>
-                <input type="text" 
+            <form className="form">
+            <div className="formTitle">Add Another Ugly Woob</div>
+                <input className="input" 
+                    type="text" 
                     placeholder="Ugly Thing Name"
                     name="name"
                     value={this.state.title}
-                    onChange={this.handleChange} />
-                <input type="text" 
+                    onChange={this.handleChange} /><br></br>
+                <input className="input" 
+                    type="text" 
                     placeholder="Ugly Thing Description"
                     name="description"
                     value={this.state.description}
-                    onChange={this.handleChange} />
-                <input type="text"
+                    onChange={this.handleChange} /><br></br>
+                <input className="input" 
+                    type="text"
                     value={this.state.imgUrl}
                     name="imgUrl"
                     placeholder="Image URL"
-                    onChange={this.handleChange} />
-                    <button>{this.props.button}</button>
+                    onChange={this.handleChange} /><br></br>
+                    <button className="btn">{this.props.button}</button>
             </form>
         )
        

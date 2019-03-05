@@ -1,33 +1,72 @@
-.App {
+.header {
+  font-size: 90pt;
   text-align: center;
+  color: #CC8E21;
+  font-family: 'Bungee Shade', cursive;
+  border-bottom: 5pt inset;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.mainBox {
+  background-Color: #556e00cf;
+  border-radius: 10%;
+  width: 400pt;
+  height: 500pt;
+  text-align: center;
+  border: 4pt solid;
+  border-color: #CC8E21;
+  margin: 20pt;
+  margin-left: 31%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.title{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30pt;
 }
 
-.App-link {
-  color: #61dafb;
+.descrip {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15pt;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.images {
+  width: 350pt;
+  height: 300pt;
+  border-radius: 10%;
+}
+
+.btn {
+  width: 55pt;
+  height: 20pt;
+  margin: 5pt;
+  background-color: #CC8E21;
+  border-radius: 5pt;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12pt;
+}
+
+.form {
+  background-Color: #556e00cf;
+  width: 600pt;
+  height: 190pt;
+  text-align: center;
+  border: 3pt solid;
+  border-color: #CC8E21;
+  border-radius: 10pt;
+  margin: 20pt;
+  margin-left: 22%;
+}
+
+.formTitle {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+}
+
+.input {
+  margin: 5pt;
+  width: 200pt;
+  height: 30pt;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
 }
