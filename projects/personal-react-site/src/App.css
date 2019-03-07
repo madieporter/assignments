@@ -1,18 +1,432 @@
-.navBar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  margin-left: -7pt;
+@media (max-width: 599px) {
+  body { 
+    background-image: url("https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    width: cover;
+    height: cover;
+  }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-left: -7pt;
+    background-color: #403e39b5;
+  }
+  
+  .navBar > a {
+    color: black;
+    /* background-color: #00517F; */
+    height: 30pt;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: 'Comfortaa', cursive;
+    flex: 1;
+  }
+
+  .navBar a:hover {
+    color: #afb647c7;
 }
 
-.navBar > a {
-  color: #4A543B;
-  background-color: #128793;
-  height: 45px;
-  text-decoration: none;
-  font-size: 29px;
-  font-family: 'Permanent Marker', cursive;
-  flex: 1;
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 350pt;
+    height: 270pt;
+    margin-top: 30pt;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    background-color: white;
+    width: 200pt;
+    height: 30pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  .btn {
+    background-color: #afb647;
+    color: black;
+    height: 20pt;
+    width: 100pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    border: 0;
+  }
+
+  .contContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .displayContainer {
+    background-color: #afb647c2;
+    width: 350pt;
+    border-radius: 5%;
+    margin-top: 15pt;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .displayName {
+    font-family: cooper-black-std, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+    margin-top: 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .displayTag {
+    font-size: 15pt;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+
+  .displayAbv {
+    font-size: 20pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayImg {
+    width: 125pt;
+    height: 350pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayDescrip {
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 30pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .sorry {
+    background-color: #b53a03d9;
+    border-radius: 50%;
+    font-size: 20pt;
+    margin-top: 20pt;
+    text-align: center;
+    font-family: cooper-black-std, serif;
+    width: 260pt;
+    height: 260pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  body { 
+    background-image: url("https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    width: cover;
+    height: cover;
+  }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-left: -7pt;
+    background-color: #403e39b5;
+  }
+  
+  .navBar > a {
+    color: black;
+    height: 30pt;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: 'Comfortaa', cursive;
+    flex: 1;
+  }
+
+  .navBar a:hover {
+    color: #afb647c7;
+}
+
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 450pt;
+    height: 380pt;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    background-color: white;
+    width: 200pt;
+    height: 30pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  .btn {
+    background-color: #afb647;
+    color: black;
+    height: 20pt;
+    width: 100pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    border: 0;
+  }
+
+  .contContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .displayContainer {
+    background-color: #afb647c2;
+    width: 350pt;
+    border-radius: 5%;
+    margin-top: 15pt;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .displayName {
+    font-family: cooper-black-std, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+    margin-top: 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .displayTag {
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+
+  .displayAbv {
+    font-size: 15pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayImg {
+    width: 125pt;
+    height: 350pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayDescrip {
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 30pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .sorry {
+    background-color: #b53a03d9;
+    border-radius: 50%;
+    font-size: 30pt;
+    margin-top: 30pt;
+    text-align: center;
+    font-family: cooper-black-std, serif;
+    width: 280pt;
+    height: 280pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  body { 
+    background-image: url("https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-left: -7pt;
+    background-color: #403e39b5;
+  }
+  
+  .navBar > a {
+    color: black;
+    height: 40pt;
+    text-decoration: none;
+    font-size: 25pt;
+    font-family: 'Comfortaa', cursive;
+    flex: 1;
+  }
+
+  .navBar a:hover {
+    color: #afb647c7;
+}
+
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header {
+    width: 600pt;
+    height: 420pt;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input {
+    background-color: white;
+    width: 300pt;
+    height: 30pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 20pt;
+  }
+
+  .btn {
+    background-color: #afb647;
+    color: black;
+    height: 20pt;
+    width: 200pt;
+    border-radius: 10pt;
+    font-family: 'Comfortaa', cursive;
+    font-size: 10pt;
+    border: 0;
+  }
+
+  .contContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .displayContainer {
+    background-color: #afb647c2;
+    width: 400pt;
+    border-radius: 5%;
+    margin-top: 15pt;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .displayName {
+    font-family: cooper-black-std, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35pt;
+    margin-top: 30pt;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .displayTag {
+    font-size: 25pt;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+
+  .displayAbv {
+    font-size: 20pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayImg {
+    width: 125pt;
+    height: 350pt;
+    margin-bottom: 10pt;
+  }
+
+  .displayDescrip {
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 30pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+  }
+
+  .sorry {
+    background-color: #b53a03d9;
+    border-radius: 50%;
+    font-size: 30pt;
+    margin-top: 30pt;
+    text-align: center;
+    font-family: cooper-black-std, serif;
+    width: 320pt;
+    height: 320pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

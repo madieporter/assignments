@@ -4,12 +4,15 @@ import { withBeer } from "./BeerProvider.js";
 
 const DisplayPairedBeers = (props) => {
     return (
-        <div>
-            <div>{props.pairedBeers.name}</div>
-            <div>{props.pairedBeers.abv}</div>
-            <div>{props.pairedBeers.tagline}</div>
-            <div>{props.pairedBeers.description}</div>
-            <img src={props.pairedBeers.image_url} alt=""/>
+        <div classname="contContainer">
+            <div className="displayContainer">
+                <div className="displayName">{props.pairedBeers.name}</div>
+                <div className="displayTag">{props.pairedBeers.tagline}</div>
+                <div className="displayAbv">ABV: {props.pairedBeers.abv}%</div>
+                <img className="displayImg"
+                src={props.pairedBeers.image_url} alt=""/>
+                <div className="displayDescrip">{props.pairedBeers.description}</div>
+            </div>
         </div>
     )
 }

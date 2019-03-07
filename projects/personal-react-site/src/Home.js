@@ -24,9 +24,14 @@ class Home extends Component {
         const filteredBeers = this.props.beers.filter(beer => {
             const pairedBeers = [];
             for (let i = 0; i < beer.food_pairing.length; i++) {
-                return beer.food_pairing[i].match(pattern)
+                if (beer.food_pairing[i].match(pattern)) {
+                    pairedBeers.push(beer)
+                }
             }
-        })
+            if (pairedBeers.length) {
+                return pairedBeers
+            }
+        }) 
         if (filteredBeers.length){
             this.setState({filteredBeers, message: false})
         }else{
@@ -39,17 +44,19 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" 
-                    placeholder="Your Food Here"
+                <form className="form"
+                    onSubmit={this.handleSubmit}>
+                    <input className="input"
+                    type="text" 
+                    placeholder="Search Pairings"
                     name="input"
                     value={this.state.name}
                     onChange={this.handleChange}
-                    />
-                    <button>Submit</button>
+                    /><br></br>
+                    <button className="btn">SEARCH</button>
                 </form>
                 {this.state.message ? 
-                    <div><h1>Sorry, no paired beers!!</h1></div>
+                        <div className="sorry">Sorry snob, no paired beers for your unique taste yet!</div>
                     :
                     this.state.filteredBeers.map((pairedBeers, i) => <DisplayPairedBeers key={i} pairedBeers={pairedBeers} />)
                 }

@@ -4,7 +4,8 @@ import BeerList from "./BeerList.js";
 import NavBar from "./NavBar.js";
 import Home from "./Home.js";
 import AllBeers from "./AllBeers.js";
-import FavoritePairings from "./FavoritePairings.js";
+import Featured from "./Featured.js";
+import Header from "./Header.js";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -12,17 +13,19 @@ import { Switch, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+  <div>
       <NavBar />
+      <div class="contContainer">
+        <Header />
+  
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/allbeers" component={AllBeers} />
+          <Route path="/featured" component={Featured} />
+        </Switch>
 
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/allbeers" component={AllBeers} />
-        <Route path="/favorites" component={FavoritePairings} />
-      </Switch>
-
-      <BeerList />
-      
+        <BeerList />
+      </div>
     </div>
   )
 }
