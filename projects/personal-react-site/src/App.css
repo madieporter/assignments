@@ -4,6 +4,7 @@
     background-attachment: fixed;
     width: cover;
     height: cover;
+    cursor: cell;
   }
 
   .navBar {
@@ -68,6 +69,7 @@
     border-radius: 10pt;
     font-family: 'Comfortaa', cursive;
     border: 0;
+    cursor: help;
   }
 
   .contContainer {
@@ -93,7 +95,7 @@
     font-family: cooper-black-std, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25pt;
+    font-size: 20pt;
     margin-top: 30pt;
     text-align: center;
     text-transform: uppercase;
@@ -115,13 +117,13 @@
 
   .displayImg {
     width: 125pt;
-    height: 350pt;
+    height: 325pt;
     margin-bottom: 10pt;
   }
 
   .displayDescrip {
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
     margin-bottom: 30pt;
     margin-left: 10pt;
     margin-right: 10pt;
@@ -149,6 +151,7 @@
     background-attachment: fixed;
     width: cover;
     height: cover;
+    cursor: cell;
   }
 
   .navBar {
@@ -211,6 +214,7 @@
     border-radius: 10pt;
     font-family: 'Comfortaa', cursive;
     border: 0;
+    cursor: help;
   }
 
   .contContainer {
@@ -258,13 +262,13 @@
 
   .displayImg {
     width: 125pt;
-    height: 350pt;
+    height: 325pt;
     margin-bottom: 10pt;
   }
 
   .displayDescrip {
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
     margin-bottom: 30pt;
     margin-left: 10pt;
     margin-right: 10pt;
@@ -293,6 +297,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: cell;
   }
 
   .navBar {
@@ -356,6 +361,7 @@
     font-family: 'Comfortaa', cursive;
     font-size: 10pt;
     border: 0;
+    cursor: help;
   }
 
   .contContainer {
@@ -403,13 +409,13 @@
 
   .displayImg {
     width: 125pt;
-    height: 350pt;
+    height: 325pt;
     margin-bottom: 10pt;
   }
 
   .displayDescrip {
     text-align: center;
-    font-size: 15pt;
+    font-size: 12pt;
     margin-bottom: 30pt;
     margin-left: 10pt;
     margin-right: 10pt;
