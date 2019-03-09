@@ -8,29 +8,27 @@
   }
 
   .navBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    text-align: center;
     display: flex;
-    margin-left: -7pt;
-    background-color: #403e39b5;
-  }
-  
-  .navBar > a {
-    color: black;
-    /* background-color: #00517F; */
-    height: 30pt;
-    text-decoration: none;
-    font-size: 25pt;
-    font-family: 'Comfortaa', cursive;
+    justify-content: center;
     flex: 1;
   }
 
-  .navBar a:hover {
-    color: #a0a019;
-    font-size: 30pt;
+  .navLogo:hover {
+    width: 50pt;
+    height: 50pt;
+    transform: rotate(360deg);
 }
+
+  .navLogo {
+    width: 40pt;
+    height: 40pt;
+    margin: 20pt;
+    transition-property: all;
+    transition-duration: 1s;
+  }
 
   .headerContainer {
     display: flex;
@@ -152,32 +150,30 @@
     background-attachment: fixed;
     width: cover;
     height: cover;
-    cursor: cell;
   }
 
   .navBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    text-align: center;
     display: flex;
-    margin-left: -7pt;
-    background-color: #403e39b5;
-  }
-  
-  .navBar > a {
-    color: black;
-    height: 30pt;
-    text-decoration: none;
-    font-size: 25pt;
-    font-family: 'Comfortaa', cursive;
+    justify-content: center;
     flex: 1;
   }
 
-  .navBar a:hover {
-    color: #a0a019;
-    font-size: 30pt;
+  .navLogo:hover {
+    width: 50pt;
+    height: 50pt;
+    transform: rotate(360deg);
 }
+
+  .navLogo {
+    width: 40pt;
+    height: 40pt;
+    margin: 20pt;
+    transition-property: all;
+    transition-duration: 1s;
+  }
 
   .headerContainer {
     display: flex;
@@ -299,38 +295,37 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    /* cursor: cell; */
   }
 
   .navBar {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    text-align: center;
     display: flex;
-    margin-left: -7pt;
-    /* background-color: #403e39b5; */
-  }
-  
-  .navBar > a {
-    color: black;
-    height: 40pt;
-    text-decoration: none;
-    font-size: 30pt;
-    font-family: 'Comfortaa', cursive;
+    justify-content: center;
     flex: 1;
   }
 
-  .navBar a:hover {
-    color: #a0a019;
-    font-size: 35pt;
+  .navLogo:hover {
+    width: 65pt;
+    height: 65pt;
+    transform: rotate(360deg);
 }
+
+  .navLogo {
+    width: 50pt;
+    height: 50pt;
+    margin: 20pt;
+    transition-property: all;
+    transition-duration: 1s;
+  }
 
   .headerContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10pt;
   }
 
   .header {
