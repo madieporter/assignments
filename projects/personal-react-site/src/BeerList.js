@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withBeer } from "./BeerProvider";
-import Beer from "./Beer.js";
+import AllBeers from "./AllBeers.js";
 
 class BeerList extends Component {
     componentDidMount() {
@@ -8,7 +8,8 @@ class BeerList extends Component {
     }
 
     render() {
-        const mappedBeers = this.props.beers.map(beer => <Beer key={beer.id} beer={beer} />)
+        console.log(this.props)
+        const mappedBeers = this.props.beers.map(beer => <AllBeers key={beer.id} beer={beer} />)
         return (
             <div>
                 {mappedBeers}

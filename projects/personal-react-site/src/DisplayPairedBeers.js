@@ -3,6 +3,7 @@ import { withBeer } from "./BeerProvider.js";
 
 
 const DisplayPairedBeers = (props) => {
+    console.log(props.pairedBeers)
     return (
         <div classname="contContainer">
             <div className="displayContainer">

@@ -9,7 +9,8 @@ class Home extends Component {
         this.state = {
             input: "",
             filteredBeers: [],
-            message: false
+            message: false,
+            submitted: false
         }
     }
 
@@ -30,6 +31,8 @@ class Home extends Component {
             }
             if (pairedBeers.length) {
                 return pairedBeers
+            } else {
+                return null
             }
         }) 
         if (filteredBeers.length){

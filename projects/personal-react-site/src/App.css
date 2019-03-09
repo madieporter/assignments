@@ -22,13 +22,14 @@
     /* background-color: #00517F; */
     height: 30pt;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 25pt;
     font-family: 'Comfortaa', cursive;
     flex: 1;
   }
 
   .navBar a:hover {
-    color: #afb647c7;
+    color: #a0a019;
+    font-size: 30pt;
 }
 
   .headerContainer {
@@ -62,7 +63,7 @@
   }
 
   .btn {
-    background-color: #afb647;
+    background-color: #a0a019;
     color: black;
     height: 20pt;
     width: 100pt;
@@ -80,7 +81,7 @@
   }
 
   .displayContainer {
-    background-color: #afb647c2;
+    background-color: #a0a019d9;
     width: 350pt;
     border-radius: 5%;
     margin-top: 15pt;
@@ -168,13 +169,14 @@
     color: black;
     height: 30pt;
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 25pt;
     font-family: 'Comfortaa', cursive;
     flex: 1;
   }
 
   .navBar a:hover {
-    color: #afb647c7;
+    color: #a0a019;
+    font-size: 30pt;
 }
 
   .headerContainer {
@@ -207,7 +209,7 @@
   }
 
   .btn {
-    background-color: #afb647;
+    background-color: #a0a019;
     color: black;
     height: 20pt;
     width: 100pt;
@@ -225,7 +227,7 @@
   }
 
   .displayContainer {
-    background-color: #afb647c2;
+    background-color: #a0a019d9;
     width: 350pt;
     border-radius: 5%;
     margin-top: 15pt;
@@ -297,7 +299,7 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    cursor: cell;
+    /* cursor: cell; */
   }
 
   .navBar {
@@ -307,20 +309,21 @@
     text-align: center;
     display: flex;
     margin-left: -7pt;
-    background-color: #403e39b5;
+    /* background-color: #403e39b5; */
   }
   
   .navBar > a {
     color: black;
     height: 40pt;
     text-decoration: none;
-    font-size: 25pt;
+    font-size: 30pt;
     font-family: 'Comfortaa', cursive;
     flex: 1;
   }
 
   .navBar a:hover {
-    color: #afb647c7;
+    color: #a0a019;
+    font-size: 35pt;
 }
 
   .headerContainer {
@@ -353,7 +356,7 @@
   }
 
   .btn {
-    background-color: #afb647;
+    background-color: #a0a019;
     color: black;
     height: 20pt;
     width: 200pt;
@@ -372,7 +375,7 @@
   }
 
   .displayContainer {
-    background-color: #afb647c2;
+    background-color: #a0a019d9;
     width: 400pt;
     border-radius: 5%;
     margin-top: 15pt;
