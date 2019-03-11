@@ -11,6 +11,10 @@ class BeerProvider extends Component {
         }
     }
 
+    componentDidMount() {
+        this.getBeers()
+    }
+
     getBeers = () => {
         axios.get("https://api.punkapi.com/v2/beers/").then(response => {
             this.setState({
