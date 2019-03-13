@@ -89,6 +89,7 @@ app.post("/food", (req, res) => {
     res.send(database);
 })
 //Again, we are declaring the body of the requested object (which is newly created from the client) as newObj
+//We are accessing the post through the request, part of the request is the body = req.body
 //we are then giving the newObj a random id
 //then we are pushing the newObj (req.body) into the array inside of database
 //and then sending back new array as the response to the client
