@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const uuid = require("uuid");
+const mongoose = require("mongoose");
+
 
 const database = require("./database.js");
 const port = 8888;
@@ -39,6 +41,10 @@ app.delete("/madisonlynn/todo/_id", (req, res) => {
     const index = data.findIndex(todo => todo._id === _id);
     database.splice(index, 1);
     res.send("Item was successfully deleted");
+})
+
+mongoose.connect("mongodb://localhost27017/todoList", {useNewUrlParser: true}).then(() => {
+    console.log("Connected to MongoDB")
 })
 
 app.listen(port, () => {

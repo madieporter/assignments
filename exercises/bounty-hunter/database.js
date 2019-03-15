@@ -1,5 +1,3 @@
-const uuid = require("uuid");
-
 module.exports = [
     {
         firstName: "Michelle",
@@ -7,69 +5,59 @@ module.exports = [
         living: true,
         bountyAmount: 500,
         type: "Jedi",
-        _id: uuid.v4()
     }, {
         firstName: "Ilana",
         lastName: "Glazer",
         living: true,
         bountyAmount: 300,
         type: "Sith",
-        _id: uuid.v4()
     }, {
         firstName: "Jessica",
         lastName: "Jones",
         living: true,
         bountyAmount: 1000,
         type: "Sith",
-        _id: uuid.v4()
     }, {
         firstName: "Veronica",
         lastName: "Mars",
         living: true,
         bountyAmount: "500",
         type: "Jedi",
-        _id: uuid.v4()
     }, {
         firstName: "Oprah",
         lastName: "Winfrey",
         living: true,
         bountyAmount: 400,
         type: "Jedi",
-        _id: uuid.v4()
     }, {
         firstName: "Amy",
         lastName: "Winehouse",
         living: false,
         bountyAmount: 100,
         type: "Sith",
-        _id: uuid.v4()
     }, {
         firstName: "Abbi",
         lastName: "Jacobsen",
         living: true,
         bountyAmount: 300,
         type: "Jedi",
-        _id: uuid.v4()
     }, {
         firstName: "Rosa",
         lastName: "Parks",
         living: false,
         bountyAmount: 600,
         type: "Jedi",
-        _id: uuid.v4()
     }, {
         firstName: "Cat",
         lastName: "Woman",
         living: true,
         bountyAmount: "700",
         type: "Sith",
-        _id: uuid.v4()
     }, {
         firstName: "Oliva",
         lastName: "Moore",
         living: false,
         bountyAmount: "500",
         type: "Jedi",
-        _id: uuid.v4()
     }
 ]
