@@ -7,7 +7,6 @@ const port = 8888;
 app.use(express.json());
 app.use("/bounties", require("./bountyRoutes"))
 
-
 mongoose.connect("mongodb://localhost:27017/bountyHunters", {useNewUrlParser: true}).then( () => {
     console.log("MongoDB is connected to the database")
     .catch(err => console.log(err))

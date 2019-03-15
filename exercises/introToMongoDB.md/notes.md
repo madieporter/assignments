@@ -87,11 +87,16 @@ module.exports = mongoose.model("todo", todoSchema)
 
 //Middlewares
 
+app.use("/todo), require("./todoRouter"))
+    -using /todo as the route name -in todoRouter is all of our requests. 
+        
 
 //Routes
 
+                |
+//DB connection v
 
-//DB connection
+//mongoose is a package that allows us to get stuff and put stuff into that database 
 mongoose.connect(mongoDB://localhost:27017/first-DB", {useNewUrlPaser: true}, () => {
     console.log("Connected to the database")
 }) 
