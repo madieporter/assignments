@@ -57,7 +57,7 @@ class BountyList extends Component {
 
     //DELETE
     deleteBounty = _id => {
-        axios.delete("/bounty").then(response => {
+        axios.delete("/bounties").then(response => {
             this.setState(prevState => ({
                 bounties: prevState.bounties.filter(bounty => bounty._id !== _id)
             }))
