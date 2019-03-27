@@ -61,7 +61,7 @@ class Home extends Component {
                 {this.state.message ? 
                         <div className="sorry">Sorry snob, no paired beers for your unique taste yet!</div>
                     :
-                    this.state.filteredBeers.map((pairedBeers, i) => <DisplayPairedBeers key={i} pairedBeers={pairedBeers} />)
+                        this.state.filteredBeers.map((pairedBeers, i) => <DisplayPairedBeers key={i} pairedBeers={pairedBeers} />)
                 }
             </div>
         )
