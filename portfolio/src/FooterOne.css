@@ -1,0 +1,33 @@
+.footerOneContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100pt;
+    background-color: #b7560b;
+}
+
+.more {
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
+    padding: 100pt;
+}
+
+.emailMe {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #dd98cf;
+    margin-left: auto;
+    padding: 100pt;
+}
+
+a {
+    color: #dd98cf; 
+}
+
+#smiley {
+    padding-left: 10pt;
+    font-size: 20pt;
+}

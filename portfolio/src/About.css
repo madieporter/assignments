@@ -1,0 +1,43 @@
+.aboutContainer {
+    background-color: #B8560C;
+}
+
+.heartHand {
+    width: 4%;
+    padding-left: 150pt;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    padding-left: 170pt;
+}
+
+.firstName {
+    color: #dd98cf;
+}
+
+.lastName {
+    color: #91AFB3;
+}
+
+.aboutInfo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding-left: 87pt;
+    padding-bottom: 90pt;
+}
+
+#arrowDown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.arrow {
+    width: 80pt;
+    height: 80pt;
+    transform: scaleX(-1);
+}

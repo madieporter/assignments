@@ -1,0 +1,34 @@
+.ContactNameContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 130px;
+    margin-top: 10pt;
+    text-shadow: 8px 0px #B8560C;
+}
+
+.meNotes {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 120pt;
+    margin-top: 50pt;
+}
+
+.headShot {
+    border-radius: 5%;
+    height: 500pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notes {
+    width: 400pt;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 90pt;
+    line-height: 30pt;
+    color: #B8560C;
+}

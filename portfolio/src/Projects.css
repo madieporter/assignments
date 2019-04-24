@@ -1,0 +1,9 @@
+.projectsTitle {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Space Mono', monospace;
+    font-size: 130px;
+    color: #F3E8FF;
+    text-shadow: 6px 2px #B8560C;
+    padding-right: 50pt;
+}

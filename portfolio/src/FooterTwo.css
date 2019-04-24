@@ -1,0 +1,39 @@
+.footerTwoContainer {
+    background-color: #F3E8FF;
+    display: flex;
+    align-items: center;
+    height: 150pt;
+}
+
+.socialLinkContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 200pt;
+    font-size: 40pt;
+}
+
+#socialLinks {
+    padding: 20pt;
+    color: #b7560b;
+    text-decoration: none;
+}
+
+.nameTag {
+    margin-left: auto;
+    padding-right: 150pt;
+    font-size: 20pt;
+}
+
+#nameTags {
+    font-size: 25pt;
+    color: #91AFB3;
+    padding: 10pt;
+}
+
+#tagWords {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: #91AFB3;
+    padding: 10pt;
+}

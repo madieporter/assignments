@@ -1,0 +1,44 @@
+.navContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #B8560C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 25pt;
+}
+
+.homeImg {
+    position: fixed;
+    width: inherit;
+    height: 20%;
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.projects {
+    margin-left: auto;
+    padding: 50pt;
+    padding-left: 0pt;
+    color: black;
+    text-decoration: none;
+}
+
+.mountainsNav {
+    width: 7%;
+    height: 7%;
+    padding-top: 25pt;
+}
+
+.contact {
+    padding: 50pt;
+    color: black;
+    text-decoration: none;
+}
