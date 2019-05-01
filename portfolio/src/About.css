@@ -1,43 +1,186 @@
-.aboutContainer {
-    background-color: #B8560C;
+@media (min-width: 1400px) {
+    .aboutContainer {
+        background-color: #B8560C;
+    }
+    
+    .heartHand {
+        width: 4%;
+        padding-left: 150pt;
+    }
+    
+    .nameContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 60px;
+        padding-left: 170pt;
+    }
+    
+    .firstName {
+        color: #dd98cf;
+    }
+    
+    .lastName {
+        color: #91AFB3;
+    }
+    
+    .aboutInfo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        padding-left: 87pt;
+        padding-bottom: 90pt;
+    }
+    
+    #arrowDown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .arrow {
+        width: 80pt;
+        height: 80pt;
+        transform: scaleX(-1);
+    }
 }
 
-.heartHand {
-    width: 4%;
-    padding-left: 150pt;
+@media (max-width: 425px) {
+    .aboutContainer {
+        background-color: #B8560C;
+    }
+    
+    .heartHand {
+        width: 4%;
+        padding-left: 30pt;
+        padding-top: 8pt;
+    }
+    
+    .nameContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        padding-left: 30pt;
+    }
+    
+    .firstName {
+        color: #dd98cf;
+    }
+    
+    .lastName {
+        color: #91AFB3;
+    }
+    
+    .aboutInfo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        padding-left: 32pt;
+        padding-bottom: 30pt;
+    }
+    
+    #arrowDown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .arrow {
+        width: 30pt;
+        height: 30pt;
+        transform: scaleX(-1);
+    }
 }
 
-.nameContainer {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    padding-left: 170pt;
+@media (min-width: 426px) and (max-width: 1023px) {
+    .aboutContainer {
+        background-color: #B8560C;
+    }
+    
+    .heartHand {
+        width: 4%;
+        padding-left: 30pt;
+        padding-top: 8pt;
+    }
+    
+    .nameContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        padding-left: 30pt;
+    }
+    
+    .firstName {
+        color: #dd98cf;
+    }
+    
+    .lastName {
+        color: #91AFB3;
+    }
+    
+    .aboutInfo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        padding-left: 32pt;
+        padding-bottom: 30pt;
+    }
+    
+    #arrowDown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .arrow {
+        width: 30pt;
+        height: 30pt;
+        transform: scaleX(-1);
+    }
 }
 
-.firstName {
-    color: #dd98cf;
-}
-
-.lastName {
-    color: #91AFB3;
-}
-
-.aboutInfo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    padding-left: 87pt;
-    padding-bottom: 90pt;
-}
-
-#arrowDown {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.arrow {
-    width: 80pt;
-    height: 80pt;
-    transform: scaleX(-1);
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .aboutContainer {
+        background-color: #B8560C;
+    }
+    
+    .heartHand {
+        width: 4%;
+        padding-left: 157pt;
+        padding-top: 8pt;
+    }
+    
+    .nameContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 35px;
+        padding-left: 157pt;
+    }
+    
+    .firstName {
+        color: #dd98cf;
+    }
+    
+    .lastName {
+        color: #91AFB3;
+    }
+    
+    .aboutInfo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        padding-bottom: 30pt;
+        padding-left: inherit;
+    }
+    
+    #arrowDown {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .arrow {
+        width: 30pt;
+        height: 30pt;
+        transform: scaleX(-1);
+    }
 }

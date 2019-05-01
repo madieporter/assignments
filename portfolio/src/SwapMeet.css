@@ -1,48 +1,204 @@
-.swapMeetContainer {
-    margin-top: 100pt;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@media (min-width: 1400px) {
+    .swapMeetContainer {
+        margin-top: 100pt;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .swapMeetInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .swapMeetTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50pt;
+        color: #B8560C;
+    }
+    
+    .swapMeetAbout {
+        font-size: 16pt;
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .smMadeWith {
+        font-family: 'Space Mono', monospace;
+        font-size: 12pt;
+    }
+    
+    .smVisit {
+        margin-top: 20pt;
+        color: #B8560C;
+        font-family: 'Space Mono', monospace;
+        font-size: 18pt;
+        text-decoration: underline;
+        text-decoration-color: #dd98cf;
+    
+    }
+    
+    .swapMeetImg {
+        box-shadow: 10px 10px 10px gray;
+        width: 50%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 20pt;
+    }
 }
 
-.swapMeetInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
+@media (max-width: 425px) {
+    .swapMeetContainer {
+        margin-top: 50pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .swapMeetInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .swapMeetTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20pt;
+        color: #B8560C;
+    }
+    
+    .swapMeetAbout {
+        font-size: 7pt;
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .smMadeWith {
+        font-family: 'Space Mono', monospace;
+        font-size: 6pt;
+    }
+    
+    .smVisit {
+        margin-top: 20pt;
+        color: #B8560C;
+        font-family: 'Space Mono', monospace;
+        font-size: 9pt;
+        text-decoration: underline;
+        text-decoration-color: #dd98cf;
+    
+    }
+    
+    .swapMeetImg {
+        box-shadow: 7px 5px 10px grey; 
+        width: 80%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 10pt;
+    }
 }
 
-.swapMeetTitle {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 50pt;
-    color: #B8560C;
+@media (min-width: 426px) and (max-width: 1023px) {
+    .swapMeetContainer {
+        margin-top: 50pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .swapMeetInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .swapMeetTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20pt;
+        color: #B8560C;
+    }
+    
+    .swapMeetAbout {
+        font-size: 7pt;
+        font-family: 'Space Mono', monospace;
+    }
+    
+    .smMadeWith {
+        font-family: 'Space Mono', monospace;
+        font-size: 6pt;
+    }
+    
+    .smVisit {
+        margin-top: 20pt;
+        color: #B8560C;
+        font-family: 'Space Mono', monospace;
+        font-size: 9pt;
+        text-decoration: underline;
+        text-decoration-color: #dd98cf;
+    
+    }
+    
+    .swapMeetImg {
+        box-shadow: 7px 5px 10px grey; 
+        width: 80%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 10pt;
+    }
 }
 
-.swapMeetAbout {
-    font-size: 16pt;
-    font-family: 'Space Mono', monospace;
-}
-
-.smMadeWith {
-    font-family: 'Space Mono', monospace;
-    font-size: 12pt;
-}
-
-.smVisit {
-    margin-top: 20pt;
-    color: #B8560C;
-    font-family: 'Space Mono', monospace;
-    font-size: 18pt;
-    text-decoration: underline;
-    text-decoration-color: #dd98cf;
-
-}
-
-.swapMeetImg {
-    box-shadow: 10px 10px 10px gray;
-    width: 50%;
-    height: 30%;
-    border-radius: 5%;
-    margin: 20pt;
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .swapMeetContainer {
+        margin-top: 50pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .swapMeetInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .swapMeetTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40pt;
+        color: #B8560C;
+    }
+    
+    .swapMeetAbout {
+        font-size: 15pt;
+        font-family: 'Space Mono', monospace;
+        width: 350pt;
+    }
+    
+    .smMadeWith {
+        font-family: 'Space Mono', monospace;
+        font-size: 10pt;
+    }
+    
+    .smVisit {
+        margin-top: 20pt;
+        color: #B8560C;
+        font-family: 'Space Mono', monospace;
+        font-size: 15pt;
+        text-decoration: underline;
+        text-decoration-color: #dd98cf;
+    
+    }
+    
+    .swapMeetImg {
+        box-shadow: 7px 5px 10px grey; 
+        width: 80%;
+        height: 30%;
+        border-radius: 5%;
+        margin: 10pt;
+    }
 }

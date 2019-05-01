@@ -1,44 +1,187 @@
-.navContainer {
-    display: flex;
-    flex-direction: row;
-    background-color: #B8560C;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding: 25pt;
-}
-
-.homeImg {
-    position: fixed;
-    width: inherit;
-    height: 20%;
-    animation: rotation 20s infinite linear;
-}
-
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
+@media (min-width: 1400px) {
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8560C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        padding: 25pt;
     }
-    to {
-      transform: rotate(359deg);
+    
+    .homeImg {
+        position: fixed;
+        width: inherit;
+        height: 22%;
+        animation: rotation 20s infinite linear;
     }
-  }
-
-.projects {
-    margin-left: auto;
-    padding: 50pt;
-    padding-left: 0pt;
-    color: black;
-    text-decoration: none;
+    
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    
+    .projects {
+        margin-left: auto;
+        padding: 50pt;
+        padding-left: 0pt;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .mountainsNav {
+        width: 7%;
+        height: 7%;
+        padding-top: 25pt;
+    }
+    
+    .contact {
+        padding: 50pt;
+        color: black;
+        text-decoration: none;
+    }
 }
 
-.mountainsNav {
-    width: 7%;
-    height: 7%;
-    padding-top: 25pt;
+@media (max-width: 425px) {
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8560C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        padding: 17pt;
+    }
+    
+    .homeImg {
+        position: fixed;
+        width: inherit;
+        height: 7%;
+        animation: rotation 20s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    
+    .projects {
+        margin-left: auto;
+        padding: 10pt;
+        padding-left: 0pt;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .mountainsNav {
+        width: 7%;
+        height: 7%;
+        padding-top: 5pt;
+    }
+    
+    .contact {
+        padding: 10pt;
+        color: black;
+        text-decoration: none;
+    }
 }
 
-.contact {
-    padding: 50pt;
-    color: black;
-    text-decoration: none;
+@media (min-width: 426px) and (max-width: 1023px) {
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8560C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        padding: 17pt;
+    }
+    
+    .homeImg {
+        position: fixed;
+        width: inherit;
+        height: 7%;
+        animation: rotation 20s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    
+    .projects {
+        margin-left: auto;
+        padding: 10pt;
+        padding-left: 0pt;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .mountainsNav {
+        width: 7%;
+        height: 7%;
+        padding-top: 5pt;
+    }
+    
+    .contact {
+        padding: 10pt;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8560C;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        padding: 25pt;
+    }
+    
+    .homeImg {
+        position: fixed;
+        width: inherit;
+        height: 12%;
+        animation: rotation 20s infinite linear;
+    }
+    
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+    
+    .projects {
+        margin-left: auto;
+        padding: 20pt;
+        padding-left: 0pt;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .mountainsNav {
+        width: 7%;
+        height: 7%;
+        padding-top: 5pt;
+    }
+    
+    .contact {
+        padding: 20pt;
+        color: black;
+        text-decoration: none;
+    }
 }
