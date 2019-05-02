@@ -82,7 +82,7 @@
     
     .more {
         font-family: 'Space Mono', monospace;
-        font-size: 16px;
+        font-size: 24px;
         padding: 20pt;
     }
     
@@ -91,7 +91,7 @@
         flex-direction: row;
         justify-content: center;
         font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
+        font-size: 20px;
         color: #dd98cf;
         padding: 10pt;
     }

@@ -122,25 +122,25 @@
     
     .beerSnobTitle {
         font-family: 'Montserrat', sans-serif;
-        font-size: 20pt;
+        font-size: 30pt;
         color: #B8560C;
     }
     
     .beerSnobAbout {
-        font-size: 7pt;
+        font-size: 12pt;
         font-family: 'Space Mono', monospace;
     }
     
     .bsMadeWith {
         font-family: 'Space Mono', monospace;
-        font-size: 6pt;
+        font-size: 8pt;
     }
     
     .bsVisit {
         margin-top: 20pt;
         color: #B8560C;
         font-family: 'Space Mono', monospace;
-        font-size: 9pt;
+        font-size: 13pt;
         text-decoration: underline;
         text-decoration-color: #dd98cf;
     }
