@@ -75,3 +75,235 @@
     }
     
 }
+
+@media (max-width: 425px) {
+    .ContactNameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 67px;
+        margin-top: 5pt;
+        text-shadow: 4.5px 0px #B8560C;
+    }
+    
+    .meNotes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contactHand {
+        width: 7%;
+    }
+    
+    .headShot {
+        border-radius: 5%;
+        height: 325pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10pt;
+    }
+    
+    .notes {
+        width: 200pt;
+        font-family: 'Space Mono', monospace;
+        font-size: 12px;
+        text-align: center;
+        line-height: 13pt;
+        color: #B8560C;
+    }
+    
+    .emailBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10pt;
+        margin-bottom: 10pt;
+        padding: 20pt;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #B8560C;
+        width: 200pt;
+        padding: 5pt;
+    }
+    
+    #question {
+        border-top-left-radius: 10pt;
+        border-top-right-radius: 10pt;
+    }
+    
+    #please {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #sendEmail {
+        border-bottom-left-radius: 10pt;
+        border-bottom-right-radius: 10pt;
+    }
+    
+}
+
+@media (min-width: 426px) and (max-width: 1023px) {
+    .ContactNameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 90px;
+        margin-top: 5pt;
+        text-shadow: 4.5px 0px #B8560C;
+    }
+    
+    .meNotes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contactHand {
+        width: 14%;
+    }
+    
+    .headShot {
+        border-radius: 5%;
+        height: 470pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10pt;
+    }
+    
+    .notes {
+        width: 300pt;
+        font-family: 'Space Mono', monospace;
+        font-size: 16px;
+        text-align: center;
+        line-height: 15pt;
+        color: #B8560C;
+    }
+    
+    .emailBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10pt;
+        margin-bottom: 10pt;
+        padding: 30pt;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #B8560C;
+        width: 270pt;
+        padding: 5pt;
+    }
+    
+    #question {
+        border-top-left-radius: 10pt;
+        border-top-right-radius: 10pt;
+    }
+    
+    #please {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #sendEmail {
+        border-bottom-left-radius: 10pt;
+        border-bottom-right-radius: 10pt;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+    .ContactNameContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: 'Space Mono', monospace;
+        font-size: 115px;
+        margin-top: 10pt;
+        text-shadow: 8px 0px #B8560C;
+    }
+    
+    .meNotes {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 60pt;
+        margin-top: 50pt;
+    }
+    
+    .contactHand {
+        width: 8%;
+    }
+    
+    .headShot {
+        border-radius: 5%;
+        height: 400pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .notes {
+        width: 400pt;
+        font-family: 'Space Mono', monospace;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30pt;
+        color: #B8560C;
+    }
+    
+    .emailBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30pt;
+        margin-bottom: 30pt;
+        padding: 50pt;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #B8560C;
+        width: 400pt;
+        padding: 13pt;
+    }
+    
+    #question {
+        border-top-left-radius: 10pt;
+        border-top-right-radius: 10pt;
+    }
+    
+    #please {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #sendEmail {
+        border-bottom-left-radius: 10pt;
+        border-bottom-right-radius: 10pt;
+    }
+}
